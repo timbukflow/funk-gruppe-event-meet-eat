@@ -8,7 +8,7 @@
             </p>
         </div>
         <div> 
-            <a href="tel:041583110500">T +41 58 311 02 00</a>
+            <a href="tel:041583110200">T +41 58 311 02 00</a>
             <a href="https://www.funk-gruppe.ch/de/" target="_top">www.funk-gruppe.ch</a>
         </div>
     </div>

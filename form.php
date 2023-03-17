@@ -68,8 +68,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message_body .= "$key: $value\n";
         }
         $headers = "From:anmeldung@funk-gruppe-event.ch";
-        $to = "versichereranlass@funk-gruppe.ch";
-        $subject = "Anmeldung-Funk-Grill-Plausch";
+        $to = "jonas.mueller@funk-gruppe.ch";
+        $subject = "Anmeldung-Funk-Meet-Eat";
         if (mail($to, $subject, $message_body, $headers)){
             $success = "Ihre Anfrage wurde erfolgreich gesendet.";
             $vorname = $name = $firma = $email = $checkbox = $mitteilung = "";

@@ -1,6 +1,6 @@
 /*
     Theme Name: Funk-Gruppe-Event
-    Version: 1.0
+    Version: 2.0
     Author: SchwizerDesign
     Author URI: http://schwizerdesign.ch
     Tags: No Tags
@@ -83,7 +83,8 @@ header {
 
 .event-title img {
   height: 70vh;
-  padding-top: 70px;
+  padding-top: 10vh;
+  max-width: 80%; margin: 0 10%;
 }
 
 .green {
@@ -145,6 +146,7 @@ header {
 .acclist {
   display: none;
 }
+
 .grid01 {
   display: inline-block;
   padding: 20px 0px;
@@ -294,11 +296,13 @@ textarea:focus {
 .homebutton {
   position: absolute;
   background-color: transparent;
+  left: 5%;
   bottom: 50px;
+  margin: 15px;
   display: inline-block;
   border: 2px solid white;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px 20px;
   z-index: 2;
 }
 .homebutton a {
@@ -343,19 +347,12 @@ display: inline-block;
     Mobile
 -----------------------------------*/
 
-@media only screen and (max-width: 1020px) {
-  .grill img {width: 50%; height: auto; left: 10%;}
-}
 
 @media only screen and (max-width: 820px) {
   h1, h2 {font-size: 24px;}
   h3, .containerform p {font-size: 15px; text-align: left;}
   p, label, input, textarea, button, a {font-size: 18px;}
-  section, .event-title {width: 90%;}
-  .funk-logo img {width: 80px; height: 80px; top: 45%; right: 5%;}
-  .event-title {padding-top: 25px;}
-  .event-title h1 {font-size: 30px;}
-  .grill img {width: 80%; height: auto; left: 10%;}
+  section {width: 90%;}
   .homebutton {bottom: 30px;}
   .containerform form {margin: 20px 0 0;}
   .gitem02 {grid-column: span 2; padding-bottom: 0px !important;}

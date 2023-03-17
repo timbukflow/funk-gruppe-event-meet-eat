@@ -11,8 +11,9 @@
 
 <body>
     <header>
-        <div class="asheader"><h3>Anmeldeschluss ist der 31. März 2023.</h3> </div>
+        <div class="asheader"><h3>Anmeldeschluss ist der 6. April 2023.</h3> </div>
         <div class="event-title"><img src="./img/funk-meet-eat.svg" alt="funk-logo"></div>
+        <button class="homebutton"> <a class="goto" href="#anmeldung">zur Anmeldung</a> </button>
     </header>
     <section>
       <article class="intro">
@@ -94,7 +95,7 @@
       </article>
       <div id="anmeldung" class="containerform">
             <h2>Anmeldung</h2>
-            <p>Anmeldeschluss ist der 31. März 2023. <br> Die Teilnehmerzahl ist beschränkt. Die Anmeldungen werden nach Eingang berücksichtigt.</p>
+            <p>Anmeldeschluss ist der 6. April 2023. <br> Die Teilnehmerzahl ist beschränkt. Die Anmeldungen werden nach Eingang berücksichtigt.</p>
             <?php include('form.php'); ?>
 
             <form id="contact" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" novalidate>
@@ -104,33 +105,29 @@
                     <label for="checkbox1">Ja, ich nehme gerne teil</label>
                 </div>
                 <div>
-                  <input class="radio" type="radio" id="checkbox2" name="checkbox[]" value="Ja, ich nehme gerne teil und mache am Töggeliturnier mit" tabindex="2" <?= (is_array($checkbox) && in_array("Ja, ich nehme gerne teil und mache am Töggeliturnier mit", $checkbox)) ? "checked" : "" ?>>
-                  <label for="checkbox2">Ja, ich nehme gerne teil und mache am Töggeliturnier mit</label>
-                </div>
-                <div>
-                  <input class="radio" type="radio" id="checkbox3" name="checkbox[]" value="Leider bin ich verhindert" tabindex="3"<?= (is_array($checkbox) && in_array("Leider bin ich verhindert", $checkbox)) ? "checked" : "" ?>>
-                  <label for="checkbox3">Leider bin ich verhindert</label>
+                  <input class="radio" type="radio" id="checkbox2" name="checkbox[]" value="Leider bin ich verhindert" tabindex="2"<?= (is_array($checkbox) && in_array("Leider bin ich verhindert", $checkbox)) ? "checked" : "" ?>>
+                  <label for="checkbox2">Leider bin ich verhindert</label>
                 </div>
                 <span class="error"><?= isset($errors["checkbox"]) ? $errors["checkbox"] : $checkbox_error ?></span>
               </fieldset>
               <fieldset>
-                  <input placeholder="Vorname&#42;" type="text" name="vorname" value="<?= $vorname ?>" tabindex="4" autofocus>
+                  <input placeholder="Vorname&#42;" type="text" name="vorname" value="<?= $vorname ?>" tabindex="3" autofocus>
                   <span class="error"><?= isset($errors["vorname"]) ? $errors["vorname"] : $vorname_error ?></span>
               </fieldset>
               <fieldset>
-                  <input placeholder="Name&#42;" type="text" name="name" value="<?= $name ?>" tabindex="5">
+                  <input placeholder="Name&#42;" type="text" name="name" value="<?= $name ?>" tabindex="4">
                   <span class="error"><?= isset($errors["name"]) ? $errors["name"] : $name_error ?></span>
               </fieldset>
               <fieldset>
-                  <input placeholder="Firma&#42;" type="text" name="firma" value="<?= $firma ?>" tabindex="6">
+                  <input placeholder="Firma&#42;" type="text" name="firma" value="<?= $firma ?>" tabindex="5">
                   <span class="error"><?= isset($errors["firma"]) ? $errors["firma"] : $firma_error ?></span>
               </fieldset>
               <fieldset>
-                  <input placeholder="Email&#42;" type="text" name="email" value="<?= $email ?>" tabindex="7">
+                  <input placeholder="Email&#42;" type="text" name="email" value="<?= $email ?>" tabindex="6">
                   <span class="error"><?= isset($errors["email"]) ? $errors["email"] : $email_error ?></span>
               </fieldset>
               <fieldset>
-              <textarea placeholder="Mitteilung" name="mitteilung" tabindex="8" rows="5"><?= $mitteilung ?></textarea>
+              <textarea placeholder="Mitteilung" name="mitteilung" tabindex="7" rows="5"><?= $mitteilung ?></textarea>
                 <span class="error"><?= isset($errors["mitteilung"]) ? $errors["mitteilung"] : $mitteilung_error ?></span>
               </fieldset>
               <fieldset>
