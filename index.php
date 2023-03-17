@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
 
+    <?php require_once 'head.php'; ?>
     <meta name="description" content="Funk-Grill-Plausch Versichereranlass mit Fussball-Special">
     <title>Funk Gruppe Event Meet &#38; Eat</title>
 </head>

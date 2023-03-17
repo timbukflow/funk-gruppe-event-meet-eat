@@ -14,9 +14,9 @@
 <meta property="og:site_name" content="Funk-Gruppe-Event">
 <meta property="og:type" content="Website">
 <meta property="og:description" content="Funk Meet und Eat">
-<meta property="og:url" content="https://https://www.funk-meet-eat.funk-gruppe-event.ch/">
-<meta property="og:image" content="https://https://www.funk-meet-eat.funk-gruppe-event.ch/img/share.jpg">
-<meta property="og:image:secure_url" content="https://https://www.funk-meet-eat.funk-gruppe-event.ch/img/share.jpg">
+<meta property="og:url" content="https://www.funk-meet-eat.funk-gruppe-event.ch/">
+<meta property="og:image" content="https://www.funk-meet-eat.funk-gruppe-event.ch/img/share.jpg">
+<meta property="og:image:secure_url" content="https://www.funk-meet-eat.funk-gruppe-event.ch/img/share.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -24,7 +24,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Funk-Gruppe-Event">
 <meta name="twitter:description" content="Funk Meet und Eat">
-<meta name="twitter:image" content="https://https://www.funk-meet-eat.funk-gruppe-event.ch/img/share.jpg">
+<meta name="twitter:image" content="https://www.funk-meet-eat.funk-gruppe-event.ch/img/share.jpg">
 <meta name="twitter:image:alt" content="Funk-Gruppe-Event | Funk Meet und Eat">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -37,9 +37,9 @@
 <meta property="business:contact_data:postal_code" content="3073">
 <meta property="business:contact_data:country_name" content="Switzerland">
 
-<link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
-<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+<link rel="icon" type="image/png" href="./img/favicon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Noto+Serif&display=swap" rel="stylesheet">
