@@ -2,13 +2,13 @@
     <div class="footer02">
         <div>
             <p>
-                Funk Zürich <br>
-                Hagenholzstrasse 56 <br>
-                CH-8050 Zürich <br>
+                Funk Bern <br>
+                Feldstrasse 42 <br>
+                CH-3073 Gümligen <br>
             </p>
         </div>
         <div> 
-            <a href="tel:041583110500">T +41 58 311 05 00</a>
+            <a href="tel:041583110500">T +41 58 311 02 00</a>
             <a href="https://www.funk-gruppe.ch/de/" target="_top">www.funk-gruppe.ch</a>
         </div>
     </div>

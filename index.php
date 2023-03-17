@@ -6,38 +6,51 @@
     <link rel="stylesheet" href="main.css" />
 
     <meta name="description" content="Funk-Grill-Plausch Versichereranlass mit Fussball-Special">
-    <title>Funk Gruppe Event</title>
+    <title>Funk Gruppe Event Meet &#38; Eat</title>
 </head>
 
 <body>
     <header>
         <div class="asheader"><h3>Anmeldeschluss ist der 31. März 2023.</h3> </div>
-        <div class="event-title">
-          <h1 >Funk Grill-Plausch <span>Versichereranlass mit Fussball-Special</span></h1>
-          <h2>Donnerstag 22. Juni 2023</span></h2>
-          <button class="homebutton"> <a class="goto" href="#anmeldung">zur Anmeldung</a> </button>
-          <div class="grill"><img src="./img/funk-grill.svg" alt="funk-grill"></div>
-          <div class="funk-logo"><img src="./img/funk-logo.svg" alt="funk-logo"></div>
-        </div>
+        <div class="event-title"><img src="./img/funk-meet-eat.svg" alt="funk-logo"></div>
     </header>
     <section>
       <article class="intro">
-        <h1>Geschätzte Geschäftspartner</h1>
+        <h1>Liebe Geschäfts- und Netzwerkpartner</h1>
         <p>
           <span>
-            Als Dankeschön für unsere erfolgreiche Zusammenarbeit laden wir Sie herzlich ein, zusammen mit uns einen gemütlichen Grillabend zu verbringen. Freuen Sie sich auch dieses Jahr auf unser packendes Fussball-Special! 
+            Im Namen der Niederlassung Bern, laden wir Sie herzlich zum <strong>Funk meet &#38; eat 2023</strong>  ein. Wir freuen uns, zusammen mit Ihnen einen stimmungsvollen Abend im schönen Ambiente des neu umgebauten Berner-Kursaals zu verbringen.
           </span>
           <span>
-            Wir freuen uns, Sie an diesem Anlass zu begrüssen und erwarten gerne Ihre An- oder Abmeldung über das untenstehende Formular. 
+            Lassen Sie sich durch die beiden Kurzreferate zu den Themen "Leadership" und "Change" inspirieren. Wie begegnen wir als Unternehmen diesen Themen und wie schaffen wir es, zusammen mit motivierten Mitarbeitenden und begeisterten Führungskräften eine gemeinsame Vision zu verfolgen.
           </span>
           <span>
-            Herzliche Grüsse <br>
-            Ihre Funkianer
+            Die beiden Referenten werden ihre Erfahrungen dazu aus verschiedenen Blickwinkeln erläutern. Vision, Motivation, Leadership und Organisationsformen wie Holokratie und Ambidextrie sind sowohl in zeitgemässen Unternehmensführungen wie auch im top modernen Leadership Campus der Schweizer Armee entscheidende Themen.
+          </span>
+          <span>
+            Im Zentrum des Abends stehen der persönliche Austausch und das gesellige Beisammensein, begleitet von kulinarischen Leckerbissen. <strong>Wir freuen uns auf den gemeinsamen Abend mit Ihnen.</strong> 
           </span>
         </p>
       </article>
 
       <article>
+      <div class="acctitle">
+          <h2>Zu den Referenten</h2>
+          <div class="pmcontainer">
+            <div class="plus"></div>
+            <div class="minus"></div>
+          </div>
+          <div class="acclist">
+            <div class="grid01">
+              <p>
+                <strong>Hans-Peter Walser</strong> <br> führt als Korpskommandant das Kommando Ausbildung. Er ist verantwortlich für die Grundbereitschaft und die Ausbildung der Armee. Zudem ist er der stellvertretende Chef der Armee. Unter dem Kommando Ausbildung laufen unter anderem das Ausbildungszentrum der Armee, div. Lehrverbände, Führungsunterstützung und die höhere Kaderausbildung der Armee.
+              </p>
+              <p class="noline">
+                <strong>Marc Rothenbühler</strong> <br> ist als Geschäftsleitungsmitglied der Funk Gruppe für die Schweizer Niederlassungen verantwortlich. Vor dem Wechsel zur Funk Gruppe im 2013, führte er als Mitglied der erweiterten Geschäftsleitung die Deutschschweizer Organisation eines renommierten Privatversicherers. Als gelernter Betriebswirtschafter bildet er sich in den Themen Change- & Performance-Management laufend weiter. 
+              </p>
+            </div>
+          </div>
+        </div>
         <div class="acctitle">
           <h2>Programm</h2>
           <div class="pmcontainer">
@@ -45,19 +58,19 @@
             <div class="minus"></div>
           </div>
           <div class="acclist">
-            <div class="acclistc">
-              <p>17.00 Uhr</p>
-              <p>Eintreffen der Gäste <span>be/at</span></p>
-              <p>17.45 Uhr</p>
-              <p>Begrüssung<span>be/at</span></p>
-              <p>18.00 Uhr</p>
-              <p>Grill-Plausch<span>be/at / Terrasse</span></p>
-              <p>19.00 Uhr</p>
-              <p>Start Töggeliturnier<span>Agora</span></p>
-              <p>21.15 Uhr</p>
-              <p>Ende Töggeliturnier und Rangverkündung<span>be/at</span></p>
-              <p class="noline">Bis 23.00 Uhr</p>
-              <p class="noline">gemütlicher Ausklang</p>
+            <div class="grid02">
+              <p><strong>Datum</strong> </p>
+              <p><strong>Dienstag, 9. Mai 2023</strong></p>
+              <p>18:00 Uhr</p>
+              <p>Eintreffen der Gäste / Apéro</p>
+              <p>18:30 Uhr</p>
+              <p>Begrüssung durch Jonas Müller</p>
+              <p>18:40 Uhr</p>
+              <p>Kurzreferat Hanspeter Walser</p>
+              <p>19:10 Uhr</p>
+              <p>Kurzreferat Marc Rothenbühler</p>
+              <p class="noline">19:30 Uhr</p>
+              <p class="noline">Essen, persönlicher Austausch</p>
             </div>
           </div>
         </div>
@@ -68,17 +81,13 @@
             <div class="minus"></div>
           </div>
           <div class="acclist">
-            <div class="acclistc">
-              <p class="green">Adresse</p>
-              <p class="green">Hagenholzstrasse 56, 8050 Zürich</p>
-              <p>zu Fuss</p>
-              <p>ab Bahnhof Oerlikon Fussweg ca. 10 Minuten</p>
-              <p>mit ÖV</p>
-              <p>ab Bahnhof Oerlikon mit Bus Nr 781 bis Haltestelle &laquo;Hagenholz&raquo; oder Tram 11 bis Haltestelle &laquo;Leutschenbach&raquo; und kurzer Fussweg</p>
-              <p>mit PW</p>
-              <p>folgen Sie dem Zeichen &laquo;Messe Zürich&raquo; und parkieren Sie im Parkhaus Messe Zürich AG</p>
-              <p class="noline gitem02">Kontaktperson bei Fragen:</p>
-              <a class="gitem02" href="mailto:karin.deutsch@funk-gruppe.ch" target="_top">karin.deutsch@funk-gruppe.ch</a>
+            <div class="grid01">
+              <p>
+
+                Mit dem <strong>öffentlichen Verkehr</strong> können Sie die Tramlinie 9 nehmen: Sie fährt vom Bahnhof Bern (Kante B) bis zur "Kursaal" Tramhaltestelle (Nähe Viktoriaplatz).
+              </p>
+              <p class="noline">
+                <strong>Per Auto</strong> ist der Kursaal über alle gängigen Wege erreichbar. Sie können der, vom Navigationssystem / Google Maps vorgegebenen Route folgen. Wählen Sie dazu "Kursaal Parking" als Ziel. In der Hauseigenen Tiefgarage stehen 240 gebührenpflichtige Parkplätze zur Verfügung. Bitte beachten Sie die beschränkte Anzahl Parkplätze im Quartier.</p>
             </div>
           </div>
         </div>

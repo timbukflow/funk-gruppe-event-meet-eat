@@ -68,47 +68,22 @@ article{
 header {
   width: 100%;
   height: 100vh;
-  background: url(img/funk-background.svg) no-repeat center center; 
-  background-size: cover;
   position: relative;
+  background-color: var(--funkblue);
 }
 
 .asheader {
   background-color: white;
   width: 100%;
-
-}
-
-.grill img {
-  height: 65vh;
-  left: 40%;
-  position: absolute;
-  bottom: 0;
-}
-
-.funk-logo img {
-  height: 150px;
-  width: 150px;
-  right: 50px;
-  position: absolute;
-  top: calc(50% - 150px);
 }
 
 .event-title {
-  margin: 0 auto;
-  padding: 50px 0 20px;
-  width: 800px;
+  text-align: center;
 }
 
-.event-title h1 {
-  font-size: 40px;
-  line-height: 1.2;
-  color: var(--funkblue);
-}
-
-.event-title h2 {
-  padding-top: 10px;
-  color: var(--funkgreen);
+.event-title img {
+  height: 70vh;
+  padding-top: 70px;
 }
 
 .green {
@@ -129,12 +104,12 @@ header {
 .acctitle {
   cursor: pointer;
   padding: 20px 15px;
-  border-top: 1px solid var(--funkgreen);
+  border-top: 1px solid var(--funkblue);
 }
 
 .acctitle h2 {
   display: inline-block;
-  color: var(--funkgreen);
+  color: var(--funkblue);
 }
 
 .pmcontainer {
@@ -152,7 +127,7 @@ header {
   left: 10px;
   width: 2px;
   height: 22px;
-  background-color: var(--funkgreen);
+  background-color: var(--funkblue);
   vertical-align: middle;
 }
 .minus {
@@ -170,7 +145,13 @@ header {
 .acclist {
   display: none;
 }
-.acclistc {
+.grid01 {
+  display: inline-block;
+  padding: 20px 0px;
+  margin: 0;
+}
+
+.grid02 {
   display: grid;
   grid-template-columns: 30% 1fr;
   padding: 20px 0px;
@@ -197,12 +178,12 @@ header {
 -----------------------------------*/
 
 .containerform {
-  border-top: 1px solid var(--funkgreen);
+  border-top: 1px solid var(--funkblue);
   padding: 20px 15px;
 }
 
 .containerform h2 {
-  color: var(--funkgreen);
+  color: var(--funkblue);
   display: inline-block;
   padding-right: 10px;
   
