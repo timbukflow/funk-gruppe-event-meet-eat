@@ -87,6 +87,10 @@
           <div class="acclist">
             <div class="grid01">
               <p>
+                <strong>Kursaal Bern</strong> <br>
+                Kornhausstrasse 3, 3013 Bern
+              </p>
+              <p>
                 Mit dem <strong>öffentlichen Verkehr</strong> können Sie die Tramlinie 9 nehmen: Sie fährt vom Bahnhof Bern (Kante B) bis zur "Kursaal" Tramhaltestelle (Nähe Viktoriaplatz).
               </p>
               <p class="noline">
