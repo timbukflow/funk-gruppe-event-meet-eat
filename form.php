@@ -139,6 +139,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $message_body .= "Firma: " . $_POST["firma2"] . "\n";
                 $message_body .= "Email: " . $_POST["email2"] . "\n";
             }
+        }
 
         $headers = "From:anmeldung@funk-gruppe-event.ch";
         $to = "ivoschwizer@gmail.com";
