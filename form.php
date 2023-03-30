@@ -123,18 +123,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (is_array($value)) {
                 $value = implode(", ", $value); // konvertieren des Array-Werts in einen String
             }
-            $message_body .= "$key: $value\n";
-        }
+            $message_body = "Anmeldung zur Veranstaltung\n\n";
+            $message_body .= "Essenspräferenz: " . $_POST["checkboxfood"] . "\n";
+            $message_body .= "Vorname: " . $_POST["vorname"] . "\n";
+            $message_body .= "Name: " . $_POST["name"] . "\n";
+            $message_body .= "Firma: " . $_POST["firma"] . "\n";
+            $message_body .= "Email: " . $_POST["email"] . "\n";
+            $message_body .= "Mitteilung: " . $_POST["mitteilung"] . "\n";
 
-        // Hinzufügen der Daten der zusätzlichen Person, wenn die Checkbox aktiviert ist
-        if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
-            $message_body .= "Weitere Person:\n";
-            $message_body .= "Essenspräferenz: " . $_POST["checkboxfood2"] . "\n";
-            $message_body .= "Vorname: " . $_POST["vorname2"] . "\n";
-            $message_body .= "Name: " . $_POST["name2"] . "\n";
-            $message_body .= "Firma: " . $_POST["firma2"] . "\n";
-            $message_body .= "Email: " . $_POST["email2"] . "\n";
-        }
+            if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
+                $message_body .= "\nWeitere Person:\n";
+                $message_body .= "Essenspräferenz: " . $_POST["checkboxfood2"] . "\n";
+                $message_body .= "Vorname: " . $_POST["vorname2"] . "\n";
+                $message_body .= "Name: " . $_POST["name2"] . "\n";
+                $message_body .= "Firma: " . $_POST["firma2"] . "\n";
+                $message_body .= "Email: " . $_POST["email2"] . "\n";
+            }
 
         $headers = "From:anmeldung@funk-gruppe-event.ch";
         $to = "ivoschwizer@gmail.com";
