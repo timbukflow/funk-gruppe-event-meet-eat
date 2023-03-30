@@ -127,7 +127,6 @@
                   <?= (isset($essenspraferenz) && $essenspraferenz == "Ich esse Fleisch") ? "checked" : "" ?>>
                   <label for="checkboxfleisch">Ich esse Fleisch</label>
                 </div>
-                <span class="error"><?= isset($errors["essenspraferenz"]) ? $errors["essenspraferenz"] : $essenspraferenz_error ?></span>
               </fieldset>
 
               <fieldset>
@@ -179,7 +178,6 @@
                       <?= (isset($essenspraferenz02) && $essenspraferenz02 == "Ich esse Fleisch") ? "checked" : "" ?>>
                       <label for="checkboxfleisch02">Ich esse Fleisch</label>
                     </div>
-                    <span class="error"><?= isset($errors["essenspraferenz02"]) ? $errors["essenspraferenz02"] : $essenspraferenz02_error ?></span>
                   </fieldset>
 
                   <fieldset>

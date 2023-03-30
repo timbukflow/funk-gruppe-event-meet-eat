@@ -10,9 +10,7 @@ function validateForm() {
         $teilnahme = $_POST["teilnahme"];
     }
 
-    if (empty($_POST["essenspraferenz"])) {
-        $errors["essenspraferenz"] = "Bitte wählen Sie mindestens eine Option aus";
-    } else {
+    if (isset($_POST["essenspraferenz"])) {
         $essenspraferenz = $_POST["essenspraferenz"];
     }
 
@@ -61,7 +59,6 @@ function validateForm() {
     $additionalPerson = isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on';
 
     // Validieren der zusätzlichen Felder, wenn die Checkbox aktiviert ist
-    $checkboxfood2 = "";
     if ($additionalPerson) {
 
         if (empty($_POST["vorname2"])) {
@@ -100,9 +97,7 @@ function validateForm() {
             }
         }
 
-        if (empty($_POST["essenspraferenz02"])) {
-            $errors["essenspraferenz02"] = "Bitte wählen Sie mindestens eine Option aus";
-        } else {
+        if (isset($_POST["essenspraferenz02"])) {
             $essenspraferenz02 = $_POST["essenspraferenz02"];
         }
     }
