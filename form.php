@@ -117,7 +117,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
             $message_body = "Anmeldung zur Veranstaltung\n\n";
             $message_body .= "Teilnahme: " . ($teilnahme == "Ja, ich nehme gerne teil" ? "Ja" : "Nein") . "\n";
-            $message_body .= "Essenspräferenz: " . ($essenspraferenz == "Ich bin Vegi" ? "Vegi" : "Fleisch") . "\n";
+            if (isset($_POST['essenspraferenz'])) {
+                $message_body .= "Essenspräferenz: " . ($essenspraferenz == "Ich bin Vegi" ? "Vegi" : "Fleisch") . "\n";
+            }
             $message_body .= "Vorname: " . $vorname . "\n";
             $message_body .= "Name: " . $name . "\n";
             $message_body .= "Firma: " . $firma . "\n";
@@ -126,7 +128,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
                 $message_body .= "\nWeitere Person:\n";
-                $message_body .= "Essenspräferenz: " . ($essenspraferenz02 == "Ich bin Vegi" ? "Vegi" : "Fleisch") . "\n";
+                if (isset($_POST['essenspraferenz02'])) {
+                    $message_body .= "Essenspräferenz: " . ($essenspraferenz02 == "Ich bin Vegi" ? "Vegi" : "Fleisch") . "\n";
+                }
                 $message_body .= "Vorname: " . $vorname2 . "\n";
                 $message_body .= "Name: " . $name2 . "\n";
                 $message_body .= "Firma: " . $firma2 . "\n";
