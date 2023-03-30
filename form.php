@@ -1,22 +1,22 @@
 <?php
 
-$checkbox_error = $checkboxfood_error = $vorname_error = $name_error = $firma_error = $email_error = $mitteilung_error = "";
-$checkbox = $checkboxfood = $vorname = $name = $firma = $email = $mitteilung = $success = "";
-$vorname2 = $name2 = $firma2 = $email2 = "";
+$teilnahme_error = $essenspraferenz_error = $vorname_error = $name_error = $firma_error = $email_error = $mitteilung_error = "";
+$teilnahme = $essenspraferenz = $vorname = $name = $firma = $email = $mitteilung = $success = "";
+$vorname2 = $name2 = $firma2 = $email2 = $essenspraferenz02 = "";
 
 function validateForm() {
     $errors = [];
 
-    if (empty($_POST["checkbox"])) {
-        $errors["checkbox"] = "Bitte wählen Sie mindestens eine Option aus";
+    if (empty($_POST["teilnahme"])) {
+        $errors["teilnahme"] = "Bitte wählen Sie mindestens eine Option aus";
     } else {
-        $checkbox = $_POST["checkbox"];
+        $teilnahme = $_POST["teilnahme"];
     }
 
-    if (empty($_POST["checkboxfood"])) {
-        $errors["checkboxfood"] = "Bitte wählen Sie mindestens eine Option aus";
+    if (empty($_POST["essenspraferenz"])) {
+        $errors["essenspraferenz"] = "Bitte wählen Sie mindestens eine Option aus";
     } else {
-        $checkboxfood = $_POST["checkboxfood"];
+        $essenspraferenz = $_POST["essenspraferenz"];
     }
 
     if (empty($_POST["vorname"])) {
@@ -103,10 +103,10 @@ function validateForm() {
             }
         }
 
-        if (empty($_POST["checkboxfood2"])) {
-            $errors["checkboxfood2"] = "Bitte wählen Sie mindestens eine Option aus";
+        if (empty($_POST["essenspraferenz02"])) {
+            $errors["essenspraferenz02"] = "Bitte wählen Sie mindestens eine Option aus";
         } else {
-            $checkboxfood2 = $_POST["checkboxfood2"];
+            $essenspraferenz02 = $_POST["essenspraferenz02"];
         }
     }
 
@@ -124,8 +124,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $value = implode(", ", $value); // konvertieren des Array-Werts in einen String
             }
             $message_body = "Anmeldung zur Veranstaltung\n\n";
-            $message_body .= "Teilnahme: " . ($checkbox == "teilnehmen" ? "Ja" : "Nein") . "\n";
-            $message_body .= "Essenspräferenz: " . ($checkboxfood == "fleisch" ? "Fleisch" : "Vegi") . "\n";
+            $message_body .= "Teilnahme: " . ($teilnahme == "teilnehmen" ? "Ja" : "Nein") . "\n";
+            $message_body .= "Essenspräferenz: " . ($essenspraferenz == "fleisch" ? "Fleisch" : "Vegi") . "\n";
             $message_body .= "Vorname: " . $_POST["vorname"] . "\n";
             $message_body .= "Name: " . $_POST["name"] . "\n";
             $message_body .= "Firma: " . $_POST["firma"] . "\n";
@@ -134,7 +134,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
                 $message_body .= "\nWeitere Person:\n";
-                $message_body .= "Essenspräferenz: " . ($checkboxfood2 == "fleisch" ? "Fleisch" : "Vegi") . "\n";
+                $message_body .= "Essenspräferenz: " . ($essenspraferenz02 == "fleisch" ? "Fleisch" : "Vegi") . "\n";
                 $message_body .= "Vorname: " . $_POST["vorname2"] . "\n";
                 $message_body .= "Name: " . $_POST["name2"] . "\n";
                 $message_body .= "Firma: " . $_POST["firma2"] . "\n";
@@ -147,12 +147,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $subject = "Anmeldung-Funk-Meet-Eat";
         if (mail($to, $subject, $message_body, $headers)){
             $success = "Ihre Anfrage wurde erfolgreich gesendet.";
-            $checkbox = $checkboxfood = $vorname = $name = $firma = $email = $mitteilung = "";
+            $teilnahme = $essenspraferenz = $vorname = $name = $firma = $email = $mitteilung = "";
         }
     } else {
         // Bei Fehlern die bereits eingegebenen Daten beibehalten
-        $checkbox = isset($_POST["checkbox"]) ? $_POST["checkbox"] : "";
-        $checkboxfood = isset($_POST["checkboxfood"]) ? $_POST["checkboxfood"] : "";
+        $teilnahme = isset($_POST["teilnahme"]) ? $_POST["teilnahme"] : "";
+        $essenspraferenz = isset($_POST["essenspraferenz"]) ? $_POST["essenspraferenz"] : "";
         $vorname = $_POST["vorname"];
         $name = $_POST["name"];
         $firma = $_POST["firma"];

@@ -101,30 +101,29 @@
             <?php include('form.php'); ?>
 
             <form id="contact" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" novalidate>
+              
               <fieldset class="checkbox">
                 <div>
-                    <input class="radio" type="radio" id="checkbox1" name="checkbox[]" value="Ja, ich nehme gerne teil" tabindex="1" <?= (is_array($checkbox) && in_array("Ja, ich nehme gerne teil", $checkbox)) ? "checked" : "" ?>>
-                    <label for="checkbox1">Ja, ich nehme gerne teil</label>
+                  <input class="radio" type="radio" id="checkbox1" name="teilnahme" value="Ja, ich nehme gerne teil" tabindex="1" 
+                  <?= (isset($teilnahme) && $teilnahme == "Ja, ich nehme gerne teil") ? "checked" : "" ?>>
                 </div>
                 <div>
-                  <input class="radio" type="radio" id="checkbox2" name="checkbox[]" value="Leider bin ich verhindert" tabindex="2"<?= (is_array($checkbox) && in_array("Leider bin ich verhindert", $checkbox)) ? "checked" : "" ?>>
-                  <label for="checkbox2">Leider bin ich verhindert</label>
+                  <input class="radio" type="radio" id="checkbox2" name="teilnahme" value="Leider bin ich verhindert" tabindex="2"
+                  <?= (isset($teilnahme) && $teilnahme == "Leider bin ich verhindert") ? "checked" : "" ?>>
                 </div>
-                <span class="error"><?= isset($errors["checkbox"]) ? $errors["checkbox"] : $checkbox_error ?></span>
+                <span class="error"><?= isset($errors["teilnahme"]) ? $errors["teilnahme"] : $checkbox_error ?></span>
               </fieldset>
 
               <fieldset class="checkbox">
                 <div>
-                    <input class="radio" type="radio" id="checkboxvegi" name="checkboxfood[]" value="Ich bin Vegi" tabindex="3" 
-                      <?= (is_array($checkboxfood) && in_array("Ich bin Vegi", $checkboxfood)) ? "checked" : "" ?>>
-                    <label for="checkboxvegi">Ich bin Vegi</label>
+                  <input class="radio" type="radio" id="checkboxvegi" name="essenspraferenz" value="Ich bin Vegi" tabindex="3" 
+                  <?= (isset($essenspraferenz) && $essenspraferenz == "Ich bin Vegi") ? "checked" : "" ?>>
                 </div>
                 <div>
-                  <input class="radio" type="radio" id="checkboxfleisch" name="checkboxfood[]" value="Ich esse Fleisch" tabindex="4"
-                    <?= (is_array($checkboxfood) && in_array("Ich esse Fleisch", $checkboxfood)) ? "checked" : "" ?>>
-                  <label for="checkboxfleisch">Ich esse Fleisch</label>
+                  <input class="radio" type="radio" id="checkboxfleisch" name="essenspraferenz" value="Ich esse Fleisch" tabindex="4"
+                  <?= (isset($essenspraferenz) && $essenspraferenz == "Ich esse Fleisch") ? "checked" : "" ?>>
                 </div>
-                <span class="error"><?= isset($errors["checkboxfood"]) ? $errors["checkboxfood"] : $checkboxfood_error ?></span>
+                <span class="error"><?= isset($errors["essenspraeferenz"]) ? $errors["essenspraeferenz"] : $essenspraeferenz_error ?></span>
               </fieldset>
 
               <fieldset>
@@ -164,17 +163,18 @@
               <!-- Zusätzliche Felder für die weitere Person (standardmäßig ausgeblendet) -->
               <fieldset id="additionalPersonFields" style="display:none;">
                   <!-- Fleisch oder Vegi für die zusätzliche Person -->
+                  
                   <fieldset class="checkbox">
-                      <div>
-                          <input class="radio" type="radio" id="checkboxvegi2" name="checkboxfood2[]" value="Ich bin Vegi" tabindex="11" <?= (is_array($checkboxfood2) && in_array("Ich bin Vegi", $checkboxfood2)) ? "checked" : "" ?>>
-                          <label for="checkboxvegi2">Ich bin Vegi</label>
-                      </div>
-                      <div>
-                          <input class="radio" type="radio" id="checkboxfleisch2" name="checkboxfood2[]" value="Ich esse Fleisch" tabindex="12" <?= (is_array($checkboxfood2) && in_array("Ich esse Fleisch", $checkboxfood2)) ? "checked" : "" ?>>
-                          <label for="checkboxfleisch2">Ich esse Fleisch</label>
-                      </div>
+                    <div>
+                      <input class="radio" type="radio" id="checkboxvegi02" name="essenspraferenz02" value="Ich bin Vegi" tabindex="3" 
+                      <?= (isset($essenspraferenz02) && $essenspraferenz02 == "Ich bin Vegi") ? "checked" : "" ?>>
+                    </div>
+                    <div>
+                      <input class="radio" type="radio" id="checkboxfleisch02" name="essenspraferenz02" value="Ich esse Fleisch" tabindex="4"
+                      <?= (isset($essenspraferenz02) && $essenspraferenz02 == "Ich esse Fleisch") ? "checked" : "" ?>>
+                    </div>
+                    <span class="error"><?= isset($errors["essenspraeferenz02"]) ? $errors["essenspraeferenz02"] : $essenspraeferenz02_error ?></span>
                   </fieldset>
-                  <span class="error"><?= isset($errors["checkboxfood2"]) ? htmlspecialchars($errors["checkboxfood2"]) : "" ?></span>
 
                   <fieldset>
                       <input placeholder="Vorname2&#42;" type="text" name="vorname2" value="<?= htmlspecialchars($vorname2) ?>" tabindex="13">
