@@ -64,6 +64,7 @@ function validateForm() {
     $additionalPerson = isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on';
 
     // Validieren der zusätzlichen Felder, wenn die Checkbox aktiviert ist
+    $checkboxfood2 = "";
     if ($additionalPerson) {
 
         if (empty($_POST["vorname2"])) {
@@ -126,13 +127,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // Hinzufügen der Daten der zusätzlichen Person, wenn die Checkbox aktiviert ist
-        if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
+        if (!empty($vorname2) || !empty($name2) || !empty($firma2) || !empty($email2)) {
             $message_body .= "Weitere Person:\n";
-            $message_body .= "Essenspräferenz: " . $_POST["checkboxfood2"] . "\n";
-            $message_body .= "Vorname: " . $_POST["vorname2"] . "\n";
-            $message_body .= "Name: " . $_POST["name2"] . "\n";
-            $message_body .= "Firma: " . $_POST["firma2"] . "\n";
-            $message_body .= "Email: " . $_POST["email2"] . "\n";
+            $message_body .= "Essenspräferenz: " . $checkboxfood2 . "\n";
+            $message_body .= "Vorname: " . $vorname2 . "\n";
+            $message_body .= "Name: " . $name2 . "\n";
+            $message_body .= "Firma: " . $firma2 . "\n";
+            $message_body .= "Email: " . $email2 . "\n";
         }
 
         $headers = "From:anmeldung@funk-gruppe-event.ch";
