@@ -1,7 +1,8 @@
 <?php
 
-$checkbox_error = $checkboxfood_error = $vorname_error = $name_error = $firma = $email_error = $mitteilung_error = "";
-$checkbox = $checkboxfood = $vorname = $name = $firma_error = $email = $mitteilung = $success = "";
+$checkbox_error = $checkboxfood_error = $vorname_error = $name_error = $firma_error = $email_error = $mitteilung_error = "";
+$checkbox = $checkboxfood = $vorname = $name = $firma = $email = $mitteilung = $success = "";
+$vorname2 = $name2 = $firma2 = $email2 = "";
 
 function validateForm() {
     $errors = [];
@@ -58,6 +59,56 @@ function validateForm() {
         $mitteilung = filter_var($_POST["mitteilung"], FILTER_SANITIZE_STRING);
     }
 
+    // zusätzliche Person 
+    // Prüfen, ob die Checkbox für die zusätzliche Person aktiviert ist
+    $additionalPerson = isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on';
+
+    // Validieren der zusätzlichen Felder, wenn die Checkbox aktiviert ist
+    if ($additionalPerson) {
+
+        if (empty($_POST["vorname2"])) {
+            $errors["vorname2"] = "Vorname ist erforderlich";
+        } else {
+            $vorname2 = filter_var($_POST["vorname2"], FILTER_SANITIZE_STRING);
+            if (empty($vorname2)) {
+                $errors["vorname2"] = "Es sind nur Buchstaben erlaubt";
+            }
+        }
+
+        if (empty($_POST["name2"])) {
+            $errors["name2"] = "Name ist erforderlich";
+        } else {
+            $name2 = filter_var($_POST["name2"], FILTER_SANITIZE_STRING);
+            if (empty($name2)) {
+                $errors["name2"] = "Es sind nur Buchstaben erlaubt";
+            }
+        }
+
+        if (empty($_POST["firma2"])) {
+            $errors["firma2"] = "Firma ist erforderlich";
+        } else {
+            $firma2 = filter_var($_POST["firma2"], FILTER_SANITIZE_STRING);
+            if (empty($firma2)) {
+                $errors["firma2"] = "Es sind nur Buchstaben erlaubt";
+            }
+        }
+
+        if (empty($_POST["email2"])) {
+            $errors["email2"] = "Email ist erforderlich";
+        } else {
+            $email2 = filter_var($_POST["email2"], FILTER_VALIDATE_EMAIL);
+            if (!$email2) {
+                $errors["email2"] = "Diese Email Adresse ist nicht korrekt";
+            }
+        }
+
+        if (empty($_POST["checkboxfood2"])) {
+            $errors["checkboxfood2"] = "Bitte wählen Sie mindestens eine Option aus";
+        } else {
+            $checkboxfood2 = $_POST["checkboxfood2"];
+        }
+    }
+
     return $errors;
 }
 
@@ -73,6 +124,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
             $message_body .= "$key: $value\n";
         }
+
+        // Hinzufügen der Daten der zusätzlichen Person, wenn die Checkbox aktiviert ist
+        if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
+            $message_body .= "Weitere Person:\n";
+            $message_body .= "Essenspräferenz: " . $_POST["checkboxfood2"] . "\n";
+            $message_body .= "Vorname: " . $_POST["vorname2"] . "\n";
+            $message_body .= "Name: " . $_POST["name2"] . "\n";
+            $message_body .= "Firma: " . $_POST["firma2"] . "\n";
+            $message_body .= "Email: " . $_POST["email2"] . "\n";
+        }
+
         $headers = "From:anmeldung@funk-gruppe-event.ch";
         $to = "ivoschwizer@gmail.com";
         $subject = "Anmeldung-Funk-Meet-Eat";
@@ -92,5 +154,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
     }
 }
+
 
 ?>

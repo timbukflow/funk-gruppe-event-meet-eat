@@ -151,7 +151,52 @@
                 <textarea placeholder="Mitteilung" name="mitteilung" tabindex="9" rows="5"><?= htmlspecialchars($mitteilung) ?></textarea>
                 <span class="error"><?= isset($errors["mitteilung"]) ? htmlspecialchars($errors["mitteilung"]) : htmlspecialchars($mitteilung_error) ?></span>
               </fieldset>
-              
+
+              <!-- Weitere Personen anmelden -->
+
+              <fieldset class="checkbox">
+                  <div>
+                      <input class="radio" type="checkbox" id="additionalPerson" name="additionalPerson" tabindex="10">
+                      <label for="additionalPerson">Weitere Person anmelden</label>
+                  </div>
+              </fieldset>
+
+              <!-- Zusätzliche Felder für die weitere Person (standardmäßig ausgeblendet) -->
+              <fieldset id="additionalPersonFields" style="display:none;">
+                  <!-- Fleisch oder Vegi für die zusätzliche Person -->
+                  <fieldset class="checkbox">
+                      <div>
+                          <input class="radio" type="radio" id="checkboxvegi2" name="checkboxfood2[]" value="Ich bin Vegi" tabindex="11" <?= (is_array($checkboxfood2) && in_array("Ich bin Vegi", $checkboxfood2)) ? "checked" : "" ?>>
+                          <label for="checkboxvegi2">Ich bin Vegi</label>
+                      </div>
+                      <div>
+                          <input class="radio" type="radio" id="checkboxfleisch2" name="checkboxfood2[]" value="Ich esse Fleisch" tabindex="12" <?= (is_array($checkboxfood2) && in_array("Ich esse Fleisch", $checkboxfood2)) ? "checked" : "" ?>>
+                          <label for="checkboxfleisch2">Ich esse Fleisch</label>
+                      </div>
+                  </fieldset>
+                  <span class="error"><?= isset($errors["checkboxfood2"]) ? htmlspecialchars($errors["checkboxfood2"]) : "" ?></span>
+
+                  <fieldset>
+                      <input placeholder="Vorname2&#42;" type="text" name="vorname2" value="<?= htmlspecialchars($vorname2) ?>" tabindex="13">
+                      <span class="error"><?= isset($errors["vorname2"]) ? htmlspecialchars($errors["vorname2"]) : "" ?></span>
+                  </fieldset>
+
+                  <fieldset>
+                      <input placeholder="Name2&#42;" type="text" name="name2" value="<?= htmlspecialchars($name2) ?>" tabindex="14">
+                      <span class="error"><?= isset($errors["name2"]) ? htmlspecialchars($errors["name2"]) : "" ?></span>
+                  </fieldset>
+
+                  <fieldset>
+                      <input placeholder="Firma2&#42;" type="text" name="firma2" value="<?= htmlspecialchars($firma2) ?>" tabindex="15">
+                      <span class="error"><?= isset($errors["firma2"]) ? htmlspecialchars($errors["firma2"]) : "" ?></span>
+                  </fieldset>
+
+                  <fieldset>
+                      <input placeholder="Email2&#42;" type="text" name="email2" value="<?= htmlspecialchars($email2) ?>" tabindex="16">
+                      <span class="error"><?= isset($errors["email2"]) ? htmlspecialchars($errors["email2"]) : "" ?></span>
+                  </fieldset>
+              </fieldset>
+
               <fieldset>
                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Anfrage senden</button>
               </fieldset>
