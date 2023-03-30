@@ -148,7 +148,7 @@
               </fieldset>
 
               <fieldset>
-                <textarea placeholder="Mitteilung" name="mitteilung" tabindex="7" rows="5"><?= htmlspecialchars($mitteilung) ?></textarea>
+                <textarea placeholder="Mitteilung" name="mitteilung" tabindex="9" rows="5"><?= htmlspecialchars($mitteilung) ?></textarea>
                 <span class="error"><?= isset($errors["mitteilung"]) ? htmlspecialchars($errors["mitteilung"]) : htmlspecialchars($mitteilung_error) ?></span>
               </fieldset>
               
