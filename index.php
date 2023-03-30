@@ -172,12 +172,12 @@
                     <div>
                       <input class="radio" type="radio" id="checkboxvegi02" name="essenspraferenz02" value="Ich bin Vegi" tabindex="3" 
                       <?= (isset($essenspraferenz02) && $essenspraferenz02 == "Ich bin Vegi") ? "checked" : "" ?>>
-                      <label for="checkboxvegi2">Ich bin Vegi</label>
+                      <label for="checkboxvegi02">Ich bin Vegi</label>
                     </div>
                     <div>
                       <input class="radio" type="radio" id="checkboxfleisch02" name="essenspraferenz02" value="Ich esse Fleisch" tabindex="4"
                       <?= (isset($essenspraferenz02) && $essenspraferenz02 == "Ich esse Fleisch") ? "checked" : "" ?>>
-                      <label for="checkboxfleisch2">Ich esse Fleisch</label>
+                      <label for="checkboxfleisch02">Ich esse Fleisch</label>
                     </div>
                     <span class="error"><?= isset($errors["essenspraeferenz02"]) ? $errors["essenspraeferenz02"] : $essenspraeferenz02_error ?></span>
                   </fieldset>
