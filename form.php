@@ -1,10 +1,7 @@
 <?php
 
-$teilnahme_error = $essenspraferenz_error = $vorname_error = $name_error = $firma_error = $email_error = $mitteilung_error = "";
-$teilnahme = $essenspraferenz = $vorname = $name = $firma = $email = $mitteilung = $success = "";
-$vorname2 = $name2 = $firma2 = $email2 = $essenspraferenz02 = "";
-
 function validateForm() {
+    global $teilnahme, $essenspraferenz, $vorname, $name, $firma, $email, $mitteilung, $vorname2, $name2, $firma2, $email2, $essenspraferenz02;
     $errors = [];
 
     if (empty($_POST["teilnahme"])) {
@@ -124,22 +121,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $value = implode(", ", $value); // konvertieren des Array-Werts in einen String
             }
             $message_body = "Anmeldung zur Veranstaltung\n\n";
-            $message_body .= "Teilnahme: " . ($teilnahme == "teilnehmen" ? "Ja" : "Nein") . "\n";
-            $message_body .= "Essenspräferenz: " . ($essenspraferenz == "fleisch" ? "Fleisch" : "Vegi") . "\n";
-            $message_body .= "Vorname: " . $_POST["vorname"] . "\n";
-            $message_body .= "Name: " . $_POST["name"] . "\n";
-            $message_body .= "Firma: " . $_POST["firma"] . "\n";
-            $message_body .= "Email: " . $_POST["email"] . "\n";
-            $message_body .= "Mitteilung: " . $_POST["mitteilung"] . "\n";
+            $message_body .= "Teilnahme: " . ($teilnahme == "Ja, ich nehme gerne teil" ? "Ja" : "Nein") . "\n";
+            $message_body .= "Essenspräferenz: " . ($essenspraferenz == "Ich bin Vegi" ? "Vegi" : "Fleisch") . "\n";
+            $message_body .= "Vorname: " . $vorname . "\n";
+            $message_body .= "Name: " . $name . "\n";
+            $message_body .= "Firma: " . $firma . "\n";
+            $message_body .= "Email: " . $email . "\n";
+            $message_body .= "Mitteilung: " . $mitteilung . "\n";
 
             if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
                 $message_body .= "\nWeitere Person:\n";
-                $message_body .= "Essenspräferenz: " . ($essenspraferenz02 == "fleisch" ? "Fleisch" : "Vegi") . "\n";
-                $message_body .= "Vorname: " . $_POST["vorname2"] . "\n";
-                $message_body .= "Name: " . $_POST["name2"] . "\n";
-                $message_body .= "Firma: " . $_POST["firma2"] . "\n";
-                $message_body .= "Email: " . $_POST["email2"] . "\n";
-            }
+                $message_body .= "Essenspräferenz: " . ($essenspraferenz02 == "Ich bin Vegi" ? "Vegi" : "Fleisch") . "\n";
+                $message_body .= "Vorname: " . $vorname2 . "\n";
+                $message_body .= "Name: " . $name2 . "\n";
+                $message_body .= "Firma: " . $firma2 . "\n";
+                $message_body .= "Email: " . $email2 . "\n";
+            }            
         }
 
         $headers = "From:anmeldung@funk-gruppe-event.ch";
