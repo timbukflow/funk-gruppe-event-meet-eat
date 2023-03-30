@@ -19,14 +19,21 @@ $( document ).ready(function() {
     });
 
     // additionalPerson
-    document.getElementById('additionalPerson').addEventListener('change', function() {
-        var additionalPersonFields = document.getElementById('additionalPersonFields');
-        if (this.checked) {
-          additionalPersonFields.style.display = 'block';
-        } else {
-          additionalPersonFields.style.display = 'none';
+      document.addEventListener('DOMContentLoaded', function() {
+        var additionalPersonCheckbox = document.getElementById("additionalPerson");
+        var additionalPersonFields = document.getElementById("additionalPersonFields");
+    
+        function toggleAdditionalPersonFields() {
+            if (additionalPersonCheckbox.checked) {
+                additionalPersonFields.style.display = "block";
+            } else {
+                additionalPersonFields.style.display = "none";
+            }
         }
-      });
+    
+        additionalPersonCheckbox.addEventListener('change', toggleAdditionalPersonFields);
+        toggleAdditionalPersonFields();
+    });
 
 
       
