@@ -2,6 +2,7 @@
 
 function validateForm() {
     global $teilnahme, $essenspraferenz, $vorname, $name, $firma, $email, $mitteilung, $vorname2, $name2, $firma2, $email2, $essenspraferenz02;
+
     $errors = [];
 
     if (empty($_POST["teilnahme"])) {
@@ -54,11 +55,9 @@ function validateForm() {
         $mitteilung = filter_var($_POST["mitteilung"], FILTER_SANITIZE_STRING);
     }
 
-    // zusätzliche Person 
-    // Prüfen, ob die Checkbox für die zusätzliche Person aktiviert ist
+    // Zusätzliche Person 
     $additionalPerson = isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on';
 
-    // Validieren der zusätzlichen Felder, wenn die Checkbox aktiviert ist
     if ($additionalPerson) {
 
         if (empty($_POST["vorname2"])) {
@@ -108,12 +107,12 @@ function validateForm() {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $errors = validateForm();
     if (empty($errors)) {
-        // Speichern der Daten in der Datenbank
+
         $message_body = "";
         unset($_POST["submit"]);
         foreach($_POST as $key => $value){
             if (is_array($value)) {
-                $value = implode(", ", $value); // konvertieren des Array-Werts in einen String
+                $value = implode(", ", $value);
             }
             $message_body = "Anmeldung zur Veranstaltung\n\n";
             $message_body .= "Teilnahme: " . ($teilnahme == "Ja, ich nehme gerne teil" ? "Ja" : "Nein") . "\n";
@@ -146,17 +145,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $teilnahme = $essenspraferenz = $vorname = $name = $firma = $email = $mitteilung = "";
         }
     } else {
-        // Bei Fehlern die bereits eingegebenen Daten beibehalten
         $teilnahme = isset($_POST["teilnahme"]) ? $_POST["teilnahme"] : "";
         $essenspraferenz = isset($_POST["essenspraferenz"]) ? $_POST["essenspraferenz"] : "";
         $vorname = $_POST["vorname"];
         $name = $_POST["name"];
         $firma = $_POST["firma"];
         $email = $_POST["email"];
-        $mitteilung = $_POST["mitteilung"];
-        
+        $mitteilung = $_POST["mitteilung"]; 
     }
 }
-
 
 ?>

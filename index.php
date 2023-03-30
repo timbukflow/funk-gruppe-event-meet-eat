@@ -154,8 +154,8 @@
                 <span class="error"><?= isset($errors["mitteilung"]) ? htmlspecialchars($errors["mitteilung"]) : htmlspecialchars($mitteilung_error) ?></span>
               </fieldset>
 
-              <!-- Weitere Personen anmelden -->
 
+              <!-- Weitere Personen anmelden -->
               <fieldset class="checkbox">
                   <div>
                       <input class="radio" type="checkbox" id="additionalPerson" name="additionalPerson" tabindex="10">
@@ -163,10 +163,8 @@
                   </div>
               </fieldset>
 
-              <!-- Zusätzliche Felder für die weitere Person (standardmäßig ausgeblendet) -->
-              <fieldset id="additionalPersonFields" style="display:none;">
-                  <!-- Fleisch oder Vegi für die zusätzliche Person -->
-                  
+              <!-- Zusätzliche Felder für die weitere Person -->
+              <fieldset id="additionalPersonFields" style="display:none;">                  
                   <fieldset class="checkbox">
                     <div>
                       <input class="radio" type="radio" id="checkboxvegi02" name="essenspraferenz02" value="Ich bin Vegi" tabindex="3" 
