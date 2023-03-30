@@ -134,9 +134,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message_body .= "Name: " . $_POST["name2"] . "\n";
             $message_body .= "Firma: " . $_POST["firma2"] . "\n";
             $message_body .= "Email: " . $_POST["email2"] . "\n";
-        } else {
-            // Entfernen der Informationen zur zusätzlichen Person, wenn die Option nicht ausgewählt ist
-            $vorname2 = $name2 = $firma2 = $email2 = "";
         }
 
         $headers = "From:anmeldung@funk-gruppe-event.ch";
