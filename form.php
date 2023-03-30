@@ -124,7 +124,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $value = implode(", ", $value); // konvertieren des Array-Werts in einen String
             }
             $message_body = "Anmeldung zur Veranstaltung\n\n";
-            $message_body .= "Essenspräferenz: " . $_POST["checkboxfood"] . "\n";
+            $message_body .= "Teilnahme: " . ($checkbox == "teilnehmen" ? "Ja" : "Nein") . "\n";
+            $message_body .= "Essenspräferenz: " . ($checkboxfood == "fleisch" ? "Fleisch" : "Vegi") . "\n";
             $message_body .= "Vorname: " . $_POST["vorname"] . "\n";
             $message_body .= "Name: " . $_POST["name"] . "\n";
             $message_body .= "Firma: " . $_POST["firma"] . "\n";
@@ -133,7 +134,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
                 $message_body .= "\nWeitere Person:\n";
-                $message_body .= "Essenspräferenz: " . $_POST["checkboxfood2"] . "\n";
+                $message_body .= "Essenspräferenz: " . ($checkboxfood2 == "fleisch" ? "Fleisch" : "Vegi") . "\n";
                 $message_body .= "Vorname: " . $_POST["vorname2"] . "\n";
                 $message_body .= "Name: " . $_POST["name2"] . "\n";
                 $message_body .= "Firma: " . $_POST["firma2"] . "\n";
