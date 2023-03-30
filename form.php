@@ -138,7 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         $headers = "From:anmeldung@funk-gruppe-event.ch";
-        $to = "ivoschwizer@gmail.com";
+        $to = "jonas.mueller@funk-gruppe.ch";
         $subject = "Anmeldung-Funk-Meet-Eat";
         if (mail($to, $subject, $message_body, $headers)){
             $success = "Ihre Anfrage wurde erfolgreich gesendet.";
