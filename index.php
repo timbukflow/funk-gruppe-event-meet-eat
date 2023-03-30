@@ -127,31 +127,35 @@
                 <span class="error"><?= isset($errors["checkboxfood"]) ? $errors["checkboxfood"] : $checkboxfood_error ?></span>
               </fieldset>
 
+              <fieldset>
+                <input placeholder="Vorname&#42;" type="text" name="vorname" value="<?= htmlspecialchars($vorname) ?>" tabindex="5" autofocus>
+                <span class="error"><?= isset($errors["vorname"]) ? htmlspecialchars($errors["vorname"]) : htmlspecialchars($vorname_error) ?></span>
+              </fieldset>
 
               <fieldset>
-                  <input placeholder="Vorname&#42;" type="text" name="vorname" value="<?= $vorname ?>" tabindex="3" autofocus>
-                  <span class="error"><?= isset($errors["vorname"]) ? $errors["vorname"] : $vorname_error ?></span>
+                <input placeholder="Name&#42;" type="text" name="name" value="<?= htmlspecialchars($name) ?>" tabindex="6">
+                <span class="error"><?= isset($errors["name"]) ? htmlspecialchars($errors["name"]) : htmlspecialchars($name_error) ?></span>
               </fieldset>
+
               <fieldset>
-                  <input placeholder="Name&#42;" type="text" name="name" value="<?= $name ?>" tabindex="4">
-                  <span class="error"><?= isset($errors["name"]) ? $errors["name"] : $name_error ?></span>
+                <input placeholder="Firma&#42;" type="text" name="firma" value="<?= htmlspecialchars($firma) ?>" tabindex="7">
+                <span class="error"><?= isset($errors["firma"]) ? htmlspecialchars($errors["firma"]) : htmlspecialchars($firma_error) ?></span>
               </fieldset>
+
               <fieldset>
-                  <input placeholder="Firma&#42;" type="text" name="firma" value="<?= $firma ?>" tabindex="5">
-                  <span class="error"><?= isset($errors["firma"]) ? $errors["firma"] : $firma_error ?></span>
+                <input placeholder="Email&#42;" type="text" name="email" value="<?= htmlspecialchars($email) ?>" tabindex="8">
+                <span class="error"><?= isset($errors["email"]) ? htmlspecialchars($errors["email"]) : htmlspecialchars($email_error) ?></span>
               </fieldset>
+
               <fieldset>
-                  <input placeholder="Email&#42;" type="text" name="email" value="<?= $email ?>" tabindex="6">
-                  <span class="error"><?= isset($errors["email"]) ? $errors["email"] : $email_error ?></span>
+                <textarea placeholder="Mitteilung" name="mitteilung" tabindex="7" rows="5"><?= htmlspecialchars($mitteilung) ?></textarea>
+                <span class="error"><?= isset($errors["mitteilung"]) ? htmlspecialchars($errors["mitteilung"]) : htmlspecialchars($mitteilung_error) ?></span>
               </fieldset>
+              
               <fieldset>
-              <textarea placeholder="Mitteilung" name="mitteilung" tabindex="7" rows="5"><?= $mitteilung ?></textarea>
-                <span class="error"><?= isset($errors["mitteilung"]) ? $errors["mitteilung"] : $mitteilung_error ?></span>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Anfrage senden</button>
               </fieldset>
-              <fieldset>
-                  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Anfrage senden</button>
-              </fieldset>
-              <div class="success"><?= $success; ?></div>    
+              <div class="success"><?= htmlspecialchars($success); ?></div>
             </form>
       </div> 
     </section>
