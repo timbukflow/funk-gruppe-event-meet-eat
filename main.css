@@ -164,6 +164,15 @@ header {
   margin: 0;
 }
 
+.center {
+  align-items: center;
+}
+
+.center img {
+  width: 80%;
+  padding: 10%;
+}
+
 .acclist p {
   padding: 15px 0;
   border-bottom: 1px solid var(--funkgray);
@@ -363,4 +372,9 @@ display: inline-block;
   .noline {padding-bottom: 0;}
   .footer01, .footer02 {position: relative; left: auto; right: auto; bottom: auto; padding-top: 15px;}
   footer {padding: 20px; margin: 5%;}
+}
+
+@media only screen and (max-width: 600px) {
+  .center {grid-template-columns: 1fr;}
+  .center img {max-width: 200px; padding: 30px 0 10px;}
 }

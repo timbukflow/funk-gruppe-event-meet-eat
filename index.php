@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="asheader"><h3>Anmeldeschluss ist der 6. April 2023.</h3> </div>
+        <div class="asheader"><h3>Anmeldeschluss ist der 12. April 2023.</h3> </div>
         <div class="event-title"><img src="./img/funk-meet-eat.svg" alt="funk-logo"></div>
         <button class="homebutton"> <a class="goto" href="#anmeldung">zur Anmeldung</a> </button>
     </header>
@@ -43,10 +43,12 @@
             <div class="minus"></div>
           </div>
           <div class="acclist">
-            <div class="grid01">
+            <div class="grid02 center">
+              <img src="./img/hans-peter.jpg" alt="funk-hans-peter">
               <p>
-                <strong>Hans-Peter Walser</strong> <br> führt als Korpskommandant das Kommando Ausbildung. Er ist verantwortlich für die Grundbereitschaft und die Ausbildung der Armee. Zudem ist er der stellvertretende Chef der Armee. Unter dem Kommando Ausbildung laufen unter anderem das Ausbildungszentrum der Armee, div. Lehrverbände, Führungsunterstützung und die höhere Kaderausbildung der Armee.
+                <strong>KKdt Hans-Peter Walser</strong> <br> führt als Korpskommandant das Kommando Ausbildung. Er ist verantwortlich für die Grundbereitschaft und die Ausbildung der Armee. Zudem ist er der stellvertretende Chef der Armee. Zum Kommando Ausbildung gehören unter anderem das Ausbildungszentrum der Armee, die Lehrverbände, die höhere Kaderausbildung der Armee sowie das Personelle der Armee.
               </p>
+              <img src="./img/marc-rothenbuehler.jpg" alt="funk-hans-peter">
               <p class="noline">
                 <strong>Marc Rothenbühler</strong> <br> ist als Geschäftsleitungsmitglied der Funk Gruppe für die Schweizer Niederlassungen verantwortlich. Vor dem Wechsel zur Funk Gruppe im 2013, führte er als Mitglied der erweiterten Geschäftsleitung die Deutschschweizer Organisation eines renommierten Privatversicherers. Als gelernter Betriebswirtschafter bildet er sich in den Themen Change- & Performance-Management laufend weiter. 
               </p>
@@ -68,9 +70,9 @@
               <p>18:30 Uhr</p>
               <p>Begrüssung durch Jonas Müller</p>
               <p>18:40 Uhr</p>
-              <p>Kurzreferat Hanspeter Walser</p>
-              <p>19:10 Uhr</p>
               <p>Kurzreferat Marc Rothenbühler</p>
+              <p>19:10 Uhr</p>
+              <p>Kurzreferat KKdt Hans-Peter Walser</p>
               <p class="noline">19:30 Uhr</p>
               <p class="noline">Essen, persönlicher Austausch</p>
             </div>
@@ -85,7 +87,6 @@
           <div class="acclist">
             <div class="grid01">
               <p>
-
                 Mit dem <strong>öffentlichen Verkehr</strong> können Sie die Tramlinie 9 nehmen: Sie fährt vom Bahnhof Bern (Kante B) bis zur "Kursaal" Tramhaltestelle (Nähe Viktoriaplatz).
               </p>
               <p class="noline">
@@ -96,7 +97,7 @@
       </article>
       <div id="anmeldung" class="containerform">
             <h2>Anmeldung</h2>
-            <p>Anmeldeschluss ist der 6. April 2023. <br> Die Teilnehmerzahl ist beschränkt. Die Anmeldungen werden nach Eingang berücksichtigt.</p>
+            <p>Anmeldeschluss ist der 12. April 2023. <br> Die Teilnehmerzahl ist beschränkt. Die Anmeldungen werden nach Eingang berücksichtigt.</p>
             <?php include('form.php'); ?>
 
             <form id="contact" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" novalidate>
@@ -111,6 +112,22 @@
                 </div>
                 <span class="error"><?= isset($errors["checkbox"]) ? $errors["checkbox"] : $checkbox_error ?></span>
               </fieldset>
+
+              <fieldset class="checkbox">
+                <div>
+                    <input class="radio" type="radio" id="checkboxvegi" name="checkboxfood[]" value="Ich bin Vegi" tabindex="3" 
+                      <?= (is_array($checkboxfood) && in_array("Ich bin Vegi", $checkboxfood)) ? "checked" : "" ?>>
+                    <label for="checkboxvegi">Ich bin Vegi</label>
+                </div>
+                <div>
+                  <input class="radio" type="radio" id="checkboxfleisch" name="checkboxfood[]" value="Ich esse Fleisch" tabindex="4"
+                    <?= (is_array($checkboxfood) && in_array("Ich esse Fleisch", $checkboxfood)) ? "checked" : "" ?>>
+                  <label for="checkboxfleisch">Ich esse Fleisch</label>
+                </div>
+                <span class="error"><?= isset($errors["checkboxfood"]) ? $errors["checkboxfood"] : $checkboxfood_error ?></span>
+              </fieldset>
+
+
               <fieldset>
                   <input placeholder="Vorname&#42;" type="text" name="vorname" value="<?= $vorname ?>" tabindex="3" autofocus>
                   <span class="error"><?= isset($errors["vorname"]) ? $errors["vorname"] : $vorname_error ?></span>

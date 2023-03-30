@@ -1,10 +1,22 @@
 <?php
 
-$vorname_error = $name_error = $firma = $email_error = $mitteilung_error = $checkbox_error = "";
-$vorname = $name = $firma_error = $email = $mitteilung = $success = $checkbox = "";
+$checkbox_error = $checkboxfood_error = $vorname_error = $name_error = $firma = $email_error = $mitteilung_error = "";
+$checkbox = $checkboxfood = $vorname = $name = $firma_error = $email = $mitteilung = $success = "";
 
 function validateForm() {
     $errors = [];
+
+    if (empty($_POST["checkbox"])) {
+        $errors["checkbox"] = "Bitte wählen Sie mindestens eine Option aus";
+    } else {
+        $checkbox = $_POST["checkbox"];
+    }
+
+    if (empty($_POST["checkboxfood"])) {
+        $errors["checkboxfood"] = "Bitte wählen Sie mindestens eine Option aus";
+    } else {
+        $checkboxfood = $_POST["checkboxfood"];
+    }
 
     if (empty($_POST["vorname"])) {
         $errors["vorname"] = "Vorname ist erforderlich";
@@ -46,12 +58,6 @@ function validateForm() {
         $mitteilung = filter_var($_POST["mitteilung"], FILTER_SANITIZE_STRING);
     }
 
-    if (empty($_POST["checkbox"])) {
-        $errors["checkbox"] = "Bitte wählen Sie mindestens eine Option aus";
-    } else {
-        $checkbox = $_POST["checkbox"];
-    }
-
     return $errors;
 }
 
@@ -68,20 +74,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message_body .= "$key: $value\n";
         }
         $headers = "From:anmeldung@funk-gruppe-event.ch";
-        $to = "jonas.mueller@funk-gruppe.ch";
+        $to = "ivoschwizer@gmail.com";
         $subject = "Anmeldung-Funk-Meet-Eat";
         if (mail($to, $subject, $message_body, $headers)){
             $success = "Ihre Anfrage wurde erfolgreich gesendet.";
-            $vorname = $name = $firma = $email = $checkbox = $mitteilung = "";
+            $checkbox = $checkboxfood = $vorname = $name = $firma = $email = $mitteilung = "";
         }
     } else {
         // Bei Fehlern die bereits eingegebenen Daten beibehalten
+        $checkbox = isset($_POST["checkbox"]) ? $_POST["checkbox"] : "";
+        $checkboxfood = isset($_POST["checkboxfood"]) ? $_POST["checkboxfood"] : "";
         $vorname = $_POST["vorname"];
         $name = $_POST["name"];
         $firma = $_POST["firma"];
         $email = $_POST["email"];
         $mitteilung = $_POST["mitteilung"];
-        $checkbox = isset($_POST["checkbox"]) ? $_POST["checkbox"] : "";
+        
     }
 }
 
