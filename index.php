@@ -113,7 +113,7 @@
                   <?= (isset($teilnahme) && $teilnahme == "Leider bin ich verhindert") ? "checked" : "" ?>>
                   <label for="checkbox2">Leider bin ich verhindert</label>
                 </div>
-                <span class="error"><?= isset($errors["teilnahme"]) ? $errors["teilnahme"] : $checkbox_error ?></span>
+                <span class="error"><?= isset($errors["teilnahme"]) ? $errors["teilnahme"] : $teilnahme_error ?></span>
               </fieldset>
 
               <fieldset class="checkbox">
@@ -127,7 +127,7 @@
                   <?= (isset($essenspraferenz) && $essenspraferenz == "Ich esse Fleisch") ? "checked" : "" ?>>
                   <label for="checkboxfleisch">Ich esse Fleisch</label>
                 </div>
-                <span class="error"><?= isset($errors["essenspraeferenz"]) ? $errors["essenspraeferenz"] : $essenspraeferenz_error ?></span>
+                <span class="error"><?= isset($errors["essenspraferenz"]) ? $errors["essenspraferenz"] : $essenspraferenz_error ?></span>
               </fieldset>
 
               <fieldset>
@@ -179,26 +179,26 @@
                       <?= (isset($essenspraferenz02) && $essenspraferenz02 == "Ich esse Fleisch") ? "checked" : "" ?>>
                       <label for="checkboxfleisch02">Ich esse Fleisch</label>
                     </div>
-                    <span class="error"><?= isset($errors["essenspraeferenz02"]) ? $errors["essenspraeferenz02"] : $essenspraeferenz02_error ?></span>
+                    <span class="error"><?= isset($errors["essenspraferenz02"]) ? $errors["essenspraferenz02"] : $essenspraferenz02_error ?></span>
                   </fieldset>
 
                   <fieldset>
-                      <input placeholder="Vorname2&#42;" type="text" name="vorname2" value="<?= htmlspecialchars($vorname2) ?>" tabindex="13">
+                      <input placeholder="Vorname&#42;" type="text" name="vorname2" value="<?= htmlspecialchars($vorname2) ?>" tabindex="13">
                       <span class="error"><?= isset($errors["vorname2"]) ? htmlspecialchars($errors["vorname2"]) : "" ?></span>
                   </fieldset>
 
                   <fieldset>
-                      <input placeholder="Name2&#42;" type="text" name="name2" value="<?= htmlspecialchars($name2) ?>" tabindex="14">
+                      <input placeholder="Name&#42;" type="text" name="name2" value="<?= htmlspecialchars($name2) ?>" tabindex="14">
                       <span class="error"><?= isset($errors["name2"]) ? htmlspecialchars($errors["name2"]) : "" ?></span>
                   </fieldset>
 
                   <fieldset>
-                      <input placeholder="Firma2&#42;" type="text" name="firma2" value="<?= htmlspecialchars($firma2) ?>" tabindex="15">
+                      <input placeholder="Firma&#42;" type="text" name="firma2" value="<?= htmlspecialchars($firma2) ?>" tabindex="15">
                       <span class="error"><?= isset($errors["firma2"]) ? htmlspecialchars($errors["firma2"]) : "" ?></span>
                   </fieldset>
 
                   <fieldset>
-                      <input placeholder="Email2&#42;" type="text" name="email2" value="<?= htmlspecialchars($email2) ?>" tabindex="16">
+                      <input placeholder="Email&#42;" type="text" name="email2" value="<?= htmlspecialchars($email2) ?>" tabindex="16">
                       <span class="error"><?= isset($errors["email2"]) ? htmlspecialchars($errors["email2"]) : "" ?></span>
                   </fieldset>
               </fieldset>
