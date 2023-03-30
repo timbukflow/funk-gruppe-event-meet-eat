@@ -118,14 +118,14 @@
 
               <fieldset class="checkbox">
                 <div>
-                  <input class="radio" type="radio" id="checkboxvegi" name="essenspraferenz" value="Ich bin Vegi" tabindex="3" 
-                  <?= (isset($essenspraferenz) && $essenspraferenz == "Ich bin Vegi") ? "checked" : "" ?>>
-                  <label for="checkboxvegi">Ich bin Vegi</label>
+                  <input class="radio" type="radio" id="checkboxvegi" name="essenspraferenz" value="vegetarisch" tabindex="3" 
+                  <?= (isset($essenspraferenz) && $essenspraferenz == "vegetarisch") ? "checked" : "" ?>>
+                  <label for="checkboxvegi">vegetarisch</label>
                 </div>
                 <div>
-                  <input class="radio" type="radio" id="checkboxfleisch" name="essenspraferenz" value="Ich esse Fleisch" tabindex="4"
-                  <?= (isset($essenspraferenz) && $essenspraferenz == "Ich esse Fleisch") ? "checked" : "" ?>>
-                  <label for="checkboxfleisch">Ich esse Fleisch</label>
+                  <input class="radio" type="radio" id="checkboxfleisch" name="essenspraferenz" value="mit Fleisch" tabindex="4"
+                  <?= (isset($essenspraferenz) && $essenspraferenz == "mit Fleisch") ? "checked" : "" ?>>
+                  <label for="checkboxfleisch">mit Fleisch</label>
                 </div>
               </fieldset>
 
@@ -167,14 +167,14 @@
               <fieldset id="additionalPersonFields" style="display:none;">                  
                   <fieldset class="checkbox">
                     <div>
-                      <input class="radio" type="radio" id="checkboxvegi02" name="essenspraferenz02" value="Ich bin Vegi" tabindex="3" 
-                      <?= (isset($essenspraferenz02) && $essenspraferenz02 == "Ich bin Vegi") ? "checked" : "" ?>>
-                      <label for="checkboxvegi02">Ich bin Vegi</label>
+                      <input class="radio" type="radio" id="checkboxvegi02" name="essenspraferenz02" value="vegetarisch" tabindex="3" 
+                      <?= (isset($essenspraferenz02) && $essenspraferenz02 == "vegetarisch") ? "checked" : "" ?>>
+                      <label for="checkboxvegi02">vegetarisch</label>
                     </div>
                     <div>
-                      <input class="radio" type="radio" id="checkboxfleisch02" name="essenspraferenz02" value="Ich esse Fleisch" tabindex="4"
-                      <?= (isset($essenspraferenz02) && $essenspraferenz02 == "Ich esse Fleisch") ? "checked" : "" ?>>
-                      <label for="checkboxfleisch02">Ich esse Fleisch</label>
+                      <input class="radio" type="radio" id="checkboxfleisch02" name="essenspraferenz02" value="mit Fleisch" tabindex="4"
+                      <?= (isset($essenspraferenz02) && $essenspraferenz02 == "mit Fleisch") ? "checked" : "" ?>>
+                      <label for="checkboxfleisch02">mit Fleisch</label>
                     </div>
                   </fieldset>
 

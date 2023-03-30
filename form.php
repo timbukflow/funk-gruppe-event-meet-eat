@@ -117,7 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message_body = "Anmeldung zur Veranstaltung\n\n";
             $message_body .= "Teilnahme: " . ($teilnahme == "Ja, ich nehme gerne teil" ? "Ja" : "Nein") . "\n";
             if (isset($_POST['essenspraferenz'])) {
-                $message_body .= "Essenspräferenz: " . ($essenspraferenz == "Ich bin Vegi" ? "Vegi" : "Fleisch") . "\n";
+                $message_body .= "Essenspräferenz: " . ($essenspraferenz == "vegetarisch" ? "vegetarisch" : "Fleisch") . "\n";
             }
             $message_body .= "Vorname: " . $vorname . "\n";
             $message_body .= "Name: " . $name . "\n";
@@ -128,7 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
                 $message_body .= "\nWeitere Person:\n";
                 if (isset($_POST['essenspraferenz02'])) {
-                    $message_body .= "Essenspräferenz: " . ($essenspraferenz02 == "Ich bin Vegi" ? "Vegi" : "Fleisch") . "\n";
+                    $message_body .= "Essenspräferenz: " . ($essenspraferenz02 == "vegetarisch" ? "vegetarisch" : "Fleisch") . "\n";
                 }
                 $message_body .= "Vorname: " . $vorname2 . "\n";
                 $message_body .= "Name: " . $name2 . "\n";
@@ -136,9 +136,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $message_body .= "Email: " . $email2 . "\n";
             }            
         }
-
+        // jonas.mueller@funk-gruppe.ch
         $headers = "From:anmeldung@funk-gruppe-event.ch";
-        $to = "jonas.mueller@funk-gruppe.ch";
+        $to = "ivoschwizer@gmail.com";
         $subject = "Anmeldung-Funk-Meet-Eat";
         if (mail($to, $subject, $message_body, $headers)){
             $success = "Ihre Anfrage wurde erfolgreich gesendet.";
