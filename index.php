@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="asheader"><h3>Anmeldeschluss ist der 12. April 2023.</h3> </div>
+        <!-- <div class="asheader"><h3>Anmeldeschluss ist der 12. April 2023.</h3> </div> -->
         <div class="event-title"><img src="./img/funk-meet-eat.svg" alt="funk-logo"></div>
         <button class="homebutton"> <a class="goto" href="#anmeldung">zur Anmeldung</a> </button>
     </header>
@@ -71,7 +71,7 @@
               <p>Begrüssung durch Jonas Müller</p>
               <p>18:40 Uhr</p>
               <p>Kurzreferat Marc Rothenbühler</p>
-              <p>19:10 Uhr</p>
+              <p>19:00 Uhr</p>
               <p>Kurzreferat KKdt Hans-Peter Walser</p>
               <p class="noline">19:30 Uhr</p>
               <p class="noline">Essen, persönlicher Austausch</p>
@@ -102,7 +102,7 @@
       </article>
       <div id="anmeldung" class="containerform">
             <h2>Anmeldung</h2>
-            <p>Anmeldeschluss ist der 12. April 2023. <br> Die Teilnehmerzahl ist beschränkt. Die Anmeldungen werden nach Eingang berücksichtigt.</p>
+            <p>Die Teilnehmerzahl ist beschränkt. Die Anmeldungen werden nach Eingang berücksichtigt.</p>
             <?php include('form.php'); ?>
 
             <form id="contact" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" novalidate>
