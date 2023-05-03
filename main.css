@@ -205,9 +205,13 @@ header {
 }
 .containerform p {
   display: inline-block;
-  font-size: 18px;
-  opacity: 0.5;
+  /* font-size: 18px;
+  opacity: 0.5; */
   padding-top: 15px;
+}
+
+.containerform a {
+  color: var(--funkblack);
 }
 
 .containerform form {

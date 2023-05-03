@@ -19,14 +19,14 @@ $( document ).ready(function() {
     });
 
     // additionalPerson
-    document.getElementById('additionalPerson').addEventListener('change', function() {
-        var additionalPersonFields = document.getElementById('additionalPersonFields');
-        if (this.checked) {
-          additionalPersonFields.style.display = 'block';
-        } else {
-          additionalPersonFields.style.display = 'none';
-        }
-      });
+    // document.getElementById('additionalPerson').addEventListener('change', function() {
+    //     var additionalPersonFields = document.getElementById('additionalPersonFields');
+    //     if (this.checked) {
+    //       additionalPersonFields.style.display = 'block';
+    //     } else {
+    //       additionalPersonFields.style.display = 'none';
+    //     }
+    //   });
 
       
 });
