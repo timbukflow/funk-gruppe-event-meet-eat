@@ -1,7 +1,11 @@
 <?php
+    // Function to sanitize user input to prevent XSS attacks
+    function sanitizeInput($data) {
+        return htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
+    }
 
-function validateForm() {
-    global $teilnahme, $essenspraferenz, $vorname, $name, $firma, $email, $mitteilung, $vorname2, $name2, $firma2, $email2, $essenspraferenz02;
+    function validateForm() {
+    global $teilnahme, $vorname, $name, $firma, $email, $mitteilung, $vorname2, $name2, $firma2, $email2;
 
     $errors = [];
 
@@ -9,10 +13,6 @@ function validateForm() {
         $errors["teilnahme"] = "Bitte wählen Sie mindestens eine Option aus";
     } else {
         $teilnahme = $_POST["teilnahme"];
-    }
-
-    if (isset($_POST["essenspraferenz"])) {
-        $essenspraferenz = $_POST["essenspraferenz"];
     }
 
     if (empty($_POST["vorname"])) {
@@ -52,7 +52,7 @@ function validateForm() {
     }
 
     if (!empty($_POST["mitteilung"])) {
-        $mitteilung = filter_var($_POST["mitteilung"], FILTER_SANITIZE_STRING);
+        $mitteilung = htmlspecialchars($_POST["mitteilung"]);
     }
 
     // Zusätzliche Person 
@@ -95,10 +95,6 @@ function validateForm() {
                 $errors["email2"] = "Diese Email Adresse ist nicht korrekt";
             }
         }
-
-        if (isset($_POST["essenspraferenz02"])) {
-            $essenspraferenz02 = $_POST["essenspraferenz02"];
-        }
     }
 
     return $errors;
@@ -106,8 +102,8 @@ function validateForm() {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $errors = validateForm();
+    
     if (empty($errors)) {
-
         $message_body = "";
         unset($_POST["submit"]);
         foreach($_POST as $key => $value){
@@ -116,43 +112,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
             $message_body = "Anmeldung zur Veranstaltung\n\n";
             $message_body .= "Teilnahme: " . ($teilnahme == "Ja, ich nehme gerne teil" ? "Ja" : "Nein") . "\n";
-            if (isset($_POST['essenspraferenz'])) {
-                $message_body .= "Essenspräferenz: " . ($essenspraferenz == "vegetarisch" ? "vegetarisch" : "Fleisch") . "\n";
-            }
-            $message_body .= "Vorname: " . $vorname . "\n";
-            $message_body .= "Name: " . $name . "\n";
-            $message_body .= "Firma: " . $firma . "\n";
-            $message_body .= "Email: " . $email . "\n";
-            $message_body .= "Mitteilung: " . $mitteilung . "\n";
+            $message_body .= "Vorname: " . sanitizeInput($vorname) . "\n";
+            $message_body .= "Name: " . sanitizeInput($name) . "\n";
+            $message_body .= "Firma: " . sanitizeInput($firma) . "\n";
+            $message_body .= "Email: " . sanitizeInput($email) . "\n";
+            $message_body .= "Mitteilung: " . sanitizeInput($mitteilung) . "\n";
 
             if (isset($_POST["additionalPerson"]) && $_POST["additionalPerson"] == 'on') {
                 $message_body .= "\nWeitere Person:\n";
-                if (isset($_POST['essenspraferenz02'])) {
-                    $message_body .= "Essenspräferenz: " . ($essenspraferenz02 == "vegetarisch" ? "vegetarisch" : "Fleisch") . "\n";
-                }
-                $message_body .= "Vorname: " . $vorname2 . "\n";
-                $message_body .= "Name: " . $name2 . "\n";
-                $message_body .= "Firma: " . $firma2 . "\n";
-                $message_body .= "Email: " . $email2 . "\n";
+                $message_body .= "Vorname: " . sanitizeInput($vorname2) . "\n";
+                $message_body .= "Name: " . sanitizeInput($name2) . "\n";
+                $message_body .= "Firma: " . sanitizeInput($firma2) . "\n";
+                $message_body .= "Email: " . sanitizeInput($email2) . "\n";
             }            
         }
          
-        $headers = "From:anmeldung@funk-gruppe-event.ch";
-        $to = "jonas.mueller@funk-gruppe.ch";
-        $subject = "Anmeldung-Funk-Meet-Eat";
+        $headers = "From: anmeldung@funk-gruppe-event.ch";
+        $to = "ivoschwizer@gmail.com";
+        $subject = "Funk Gruppe Event | meet&eat";
+        $headers .= "\r\nContent-Type: text/plain; charset=utf-8\r\n";
+            
         if (mail($to, $subject, $message_body, $headers)){
-            $success = "Ihre Anfrage wurde erfolgreich gesendet.";
-            $teilnahme = $essenspraferenz = $vorname = $name = $firma = $email = $mitteilung = "";
+            $success = "";
+            $teilnahme = $vorname = $name = $firma = $email = $mitteilung = "";
         }
-    } else {
-        $teilnahme = isset($_POST["teilnahme"]) ? $_POST["teilnahme"] : "";
-        $essenspraferenz = isset($_POST["essenspraferenz"]) ? $_POST["essenspraferenz"] : "";
-        $vorname = $_POST["vorname"];
-        $name = $_POST["name"];
-        $firma = $_POST["firma"];
-        $email = $_POST["email"];
-        $mitteilung = $_POST["mitteilung"]; 
-    }
+        } else {
+            $teilnahme = isset($_POST["teilnahme"]) ? $_POST["teilnahme"] : "";
+            $vorname = isset($_POST["vorname"]) ? $_POST["vorname"] : "";
+            $name = isset($_POST["name"]) ? $_POST["name"] : "";
+            $firma = isset($_POST["firma"]) ? $_POST["firma"] : "";
+            $email = isset($_POST["email"]) ? $_POST["email"] : "";
+            $mitteilung = isset($_POST["mitteilung"]) ? $_POST["mitteilung"] : "";
+        }
 }
 
 ?>

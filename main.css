@@ -41,8 +41,20 @@ p, .error, .success {
 span {
   display: block;
 }
+span.title {
+  font-size: 22px;
+  font-weight: 600;
+}
 strong {
   font-weight: 600;
+}
+
+.quot {
+  color: var(--funkblue);
+  margin: 25px 0;
+  padding: 25px 0px;
+  border-top: 1px var(--funkblue) solid;
+  border-bottom: 1px var(--funkblue) solid;
 }
 
 /*----------------------------------
@@ -156,13 +168,9 @@ header {
   margin: 0;
 }
 
-.center {
-  align-items: center;
-}
-
 .center img {
-  width: 80%;
-  padding: 10%;
+  width: 90%;
+  padding-top: 10%;
 }
 
 .acclist p {
@@ -300,6 +308,31 @@ input.radio, input.checkbox {
   color: var(--funkgreen);
   text-align: left;
   padding: 10px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--funkgreen);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.popup h1, .popup p {
+  color: white;
+}
+
+#closePopup {
+  background-color: white ;
+  color: var(--funkgreen);
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
 }
 
 .homebutton {

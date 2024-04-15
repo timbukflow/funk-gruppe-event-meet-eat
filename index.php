@@ -18,39 +18,42 @@
     </header>
     <section>
       <article class="intro">
-        <h1>Liebe Geschäfts- und Netzwerkpartner</h1>
+        <h1>Herzliche Einladung</h1>
         <p>
           <span>
-            Im Namen der Niederlassung Bern, laden wir Sie herzlich zum <strong>Funk meet&#38;eat 2023</strong>  ein. Wir freuen uns, zusammen mit Ihnen einen stimmungsvollen Abend in schönem Ambiente des neu umgebauten Berner-Kursaals zu verbringen.
+            Liebe Geschäfts- und Netzwerkpartner
           </span>
           <span>
-            Lassen Sie sich durch die beiden Kurzreferate zu den Themen "Leadership" und "Change" inspirieren. Wie begegnen wir als Unternehmen diesen Themen und wie schaffen wir es, zusammen mit motivierten Mitarbeitenden und begeisterten Führungskräften eine gemeinsame Vision zu verfolgen?
+            Im Namen der Niederlassung Bern, lade ich Sie herzlich zum Funk meet&#38;eat vom Donnerstag, <strong>17. Oktober 2024 ab 17:00 Uhr im Berner Kursaal ein.</strong>
           </span>
-          <span>
-            Die beiden Referenten werden ihre Erfahrungen dazu aus verschiedenen Blickwinkeln erläutern. Vision, Motivation, Leadership und Organisationsformen sind sowohl in zeitgemässen Unternehmensführungen wie auch im top modernen Leadership Campus der Schweizer Armee entscheidende Themen.
+        </p>
+        <p class="quot">
+          <span class="title">
+            Mit Keynote von Bernhard Heusler.
           </span>
-          <span>
-            Im Zentrum des Abends stehen der persönliche Austausch und das gesellige Beisammensein, begleitet von kulinarischen Leckerbissen. <strong>Wir freuen uns auf den gemeinsamen Abend mit Ihnen.</strong> 
+            Bekannt als ehemaliger Präsident des FC Basel, Leadership-Referent und Buchautor. Ungeachtet ob in Verwaltungsräten, Spitzensport-, Verkaufs- oder Produktions-Teams, sind es schlussendlich immer die Menschen bzw. ihre Aufgaben, Rollen und ihr Zusammenspiel, welches für das Erreichen der gemeinsamen Ziele entscheidend ist. Teamwork und Führung sind also zentrale Erfolgsfaktoren jeder Unternehmung. Unter dem Titel "EIN TEAM GEWINNT IMMER", ist das neue Buch von Bernhard Heusler im Oktober 2023 erschienen. Der Autor persönlich, wird uns sein Leadership-ABC aus erster Hand und auf humorvolle Art und Weise näherbringen. 
           </span>
+        </p>
+        <p>
+          Lassen Sie sich inspirieren und geniessen Sie mit uns zusammen einen spannenden Abend mit persönlichen Gesprächen, Networking und kulinarischen Leckerbissen.<br><br>
+          Herzliche Grüsse <br>
+          <strong>Jonas Müller</strong> <br>
+          Leiter Niederlassung Bern
         </p>
       </article>
 
       <article>
       <div class="acctitle">
-          <h2>Zu den Referenten</h2>
+          <h2>Referent</h2>
           <div class="pmcontainer">
             <div class="plus"></div>
             <div class="minus"></div>
           </div>
           <div class="acclist">
             <div class="grid02 center">
-              <img src="./img/hans-peter.jpg" alt="funk-hans-peter">
-              <p>
-                <strong>Korpskommandant Hans-Peter Walser</strong> <br> führt das Kommando Ausbildung. Er ist verantwortlich für die Grundbereitschaft und die Ausbildung der Armee. Zudem ist er der stellvertretende Chef der Armee. Zum Kommando Ausbildung gehören unter anderem das Ausbildungszentrum der Armee, die Lehrverbände, die höhere Kaderausbildung der Armee sowie das Personelle der Armee.
-              </p>
-              <img src="./img/marc-rothenbuehler.jpg" alt="funk-hans-peter">
+              <img src="./img/bernhard-heusler.png" alt="funk-bernhard-heusler">
               <p class="noline">
-                <strong>Marc Rothenbühler</strong> <br> ist als Geschäftsleitungsmitglied der Funk Gruppe für die Schweizer Niederlassungen verantwortlich. Vor dem Wechsel zur Funk Gruppe im 2013, führte er als Mitglied der erweiterten Geschäftsleitung die Deutschschweizer Organisation eines renommierten Privatversicherers. Als gelernter Betriebswirtschafter bildet er sich in den Themen Change- & Performance-Management laufend weiter. 
+                <strong>Bernhard Heusler,</strong> <br> geboren 1963, ehemaliger Präsident des FC Basel, Co-Präsident der Schweizer Sporthilfe sowie Leadership-Referent und Buchautor. Seine Erlebnisse in Exekutiv- und Entscheidungsgremien sowie die Erkenntnisse, die er aus seinen Erfahrungen als Führungsperson und Berater gewonnen hat, gibt er an Vorträgen für Interessierte und an Seminaren für Führungskräfte weiter. In Ergänzung seiner Aktivitäten als Referent und Coach hat Bernhard Heusler unter dem Titel «EIN TEAM GEWINNT IMMER» sein persönliches Leadership-Abc verfasst.
               </p>
             </div>
           </div>
@@ -64,17 +67,15 @@
           <div class="acclist">
             <div class="grid02">
               <p><strong>Datum</strong> </p>
-              <p><strong>Dienstag, 9. Mai 2023</strong></p>
+              <p><strong>Donnerstag, 17. Oktober 2024</strong></p>
+              <p>17:00 Uhr</p>
+              <p>Eintreffen der Gäste</p>
+              <p>17:45 Uhr</p>
+              <p>Begrüssung (Jonas Müller)</p>
               <p>18:00 Uhr</p>
-              <p>Eintreffen der Gäste / Apéro</p>
-              <p>18:30 Uhr</p>
-              <p>Begrüssung durch Jonas Müller</p>
-              <p>18:40 Uhr</p>
-              <p>Kurzreferat Marc Rothenbühler</p>
-              <p>19:00 Uhr</p>
-              <p>Kurzreferat KKdt Hans-Peter Walser</p>
-              <p class="noline">19:30 Uhr</p>
-              <p class="noline">Essen, persönlicher Austausch</p>
+              <p>Keynote "Teamwork/Leadership" (Bernhard Heusler)</p>
+              <p class="noline">19:00 Uhr</p>
+              <p class="noline">Fragerunde, Apéro Riche und Networking</p>
             </div>
           </div>
         </div>
@@ -87,24 +88,127 @@
           <div class="acclist">
             <div class="grid01">
               <p>
-                <strong>Kursaal Bern</strong> <br>
-                Kornhausstrasse 3, 3013 Bern
+                <strong>Kursaal Bern AG (Raum Aare)</strong> <br>
+                Kornhausstrasse 3, Bern 22
               </p>
               <p>
-                <strong>Anreise per ÖV</strong> <br>
-                Mit dem öffentlichen Verkehr können Sie die Tramlinie 9 nehmen: Sie fährt vom Bahnhof Bern (Kante B) bis zur "Kursaal" Tramhaltestelle (Nähe Viktoriaplatz).
+                <strong>Anreise mit dem ÖV:</strong> <br>
+                Tramlinie Nr. 9 bringt Sie vom Bahnhof Bern (Kante B) direkt zur Tramhaltestelle "Kursaal" (Nähe Viktoriaplatz).
               </p>
               <p class="noline">
-                <strong>Anreise per Auto</strong> <br> Im Kursaal Parking stehen Ihnen 240 Parkplätze zur Verfügung. Bitte beachten Sie die beschränkte Anzahl Parkplätze im Quartier.</p>
+                <strong>Anreise mit dem PW:</strong> <br> 
+                Navigationssystem / Google Maps mit Ziel "Kursaal Parking" eingeben. Von der hauseigenen Tiefgarage mit 240 Parkplätzen führt Sie der Lift direkt in den Kursaal Bern und ins Swissôtel Kursaal Bern.</p>
             </div>
           </div>
         </div>
       </article>
       <div id="anmeldung" class="containerform">
             <h2>Anmeldung</h2>
-            <p>Diese Veranstaltung ist aktuell ausgebucht. Wenn Sie auf die Warteliste aufgenommen werden möchten, schreiben Sie uns bitte eine E-Mail an <a href="mailto:jonas.mueller@funk-gruppe.ch?subject=Warteliste für Funk Event Meet and Eat - 9. Mai 2023 ">jonas.mueller@funk-gruppe.ch</a>. Wir werden Sie umgehend informieren, sobald ein Platz frei wird.</p>
+            <p>Die Teilnehmerzahl ist beschränkt. Die Anmeldungen werden nach Eingang berücksichtigt. <strong>Anmeldeschluss ist der 20. September 2024.</strong></p>
+            <?php include('form.php'); ?>
+
+            <form id="contact" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" novalidate>
+              
+              <fieldset class="checkbox">
+                <div>
+                  <input class="radio" type="radio" id="checkbox1" name="teilnahme" value="Ja, ich nehme gerne teil" tabindex="1" 
+                  <?= (isset($teilnahme) && $teilnahme == "Ja, ich nehme gerne teil") ? "checked" : "" ?>>
+                  <label for="checkbox1">Ja, ich nehme gerne teil</label>
+                </div>
+                <div>
+                  <input class="radio" type="radio" id="checkbox2" name="teilnahme" value="Leider bin ich verhindert" tabindex="2"
+                  <?= (isset($teilnahme) && $teilnahme == "Leider bin ich verhindert") ? "checked" : "" ?>>
+                  <label for="checkbox2">Leider bin ich verhindert</label>
+                </div>
+                <span class="error"><?= isset($errors["teilnahme"]) ? $errors["teilnahme"] : $teilnahme_error ?></span>
+              </fieldset>
+
+              <fieldset>
+                <input placeholder="Vorname&#42;" type="text" name="vorname" value="<?= htmlspecialchars($vorname) ?>" tabindex="5" autofocus>
+                <span class="error"><?= isset($errors["vorname"]) ? htmlspecialchars($errors["vorname"]) : htmlspecialchars($vorname_error) ?></span>
+              </fieldset>
+
+              <fieldset>
+                <input placeholder="Name&#42;" type="text" name="name" value="<?= htmlspecialchars($name) ?>" tabindex="6">
+                <span class="error"><?= isset($errors["name"]) ? htmlspecialchars($errors["name"]) : htmlspecialchars($name_error) ?></span>
+              </fieldset>
+
+              <fieldset>
+                <input placeholder="Firma&#42;" type="text" name="firma" value="<?= htmlspecialchars($firma) ?>" tabindex="7">
+                <span class="error"><?= isset($errors["firma"]) ? htmlspecialchars($errors["firma"]) : htmlspecialchars($firma_error) ?></span>
+              </fieldset>
+
+              <fieldset>
+                <input placeholder="Email&#42;" type="text" name="email" value="<?= htmlspecialchars($email) ?>" tabindex="8">
+                <span class="error"><?= isset($errors["email"]) ? htmlspecialchars($errors["email"]) : htmlspecialchars($email_error) ?></span>
+              </fieldset>
+
+              <fieldset>
+                <textarea placeholder="Mitteilung" name="mitteilung" tabindex="9" rows="5"><?= htmlspecialchars($mitteilung) ?></textarea>
+                <span class="error"><?= isset($errors["mitteilung"]) ? htmlspecialchars($errors["mitteilung"]) : htmlspecialchars($mitteilung_error) ?></span>
+              </fieldset>
+
+
+              <!-- Weitere Personen anmelden -->
+              <fieldset class="checkbox">
+                  <div>
+                      <input class="radio" type="checkbox" id="additionalPerson" name="additionalPerson" tabindex="10">
+                      <label for="additionalPerson">Weitere Person anmelden</label>
+                  </div>
+              </fieldset>
+
+              <!-- Zusätzliche Felder für die weitere Person -->
+              <fieldset id="additionalPersonFields" style="display:none;">                  
+                  <fieldset>
+                      <input placeholder="Vorname&#42;" type="text" name="vorname2" value="<?= htmlspecialchars($vorname2) ?>" tabindex="13">
+                      <span class="error"><?= isset($errors["vorname2"]) ? htmlspecialchars($errors["vorname2"]) : "" ?></span>
+                  </fieldset>
+
+                  <fieldset>
+                      <input placeholder="Name&#42;" type="text" name="name2" value="<?= htmlspecialchars($name2) ?>" tabindex="14">
+                      <span class="error"><?= isset($errors["name2"]) ? htmlspecialchars($errors["name2"]) : "" ?></span>
+                  </fieldset>
+
+                  <fieldset>
+                      <input placeholder="Firma&#42;" type="text" name="firma2" value="<?= htmlspecialchars($firma2) ?>" tabindex="15">
+                      <span class="error"><?= isset($errors["firma2"]) ? htmlspecialchars($errors["firma2"]) : "" ?></span>
+                  </fieldset>
+
+                  <fieldset>
+                      <input placeholder="Email&#42;" type="text" name="email2" value="<?= htmlspecialchars($email2) ?>" tabindex="16">
+                      <span class="error"><?= isset($errors["email2"]) ? htmlspecialchars($errors["email2"]) : "" ?></span>
+                  </fieldset>
+              </fieldset>
+
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Anfrage senden</button>
+              </fieldset>
+              <div class="success"><?= htmlspecialchars($success); ?></div>
+            </form>
+
+            <div id="popup" class="popup">
+              <h1>Vielen Dank für Ihr Interesse!</h1> 
+              <p>Ihre An- oder Abmeldung haben wir erhalten. Eine persönliche Bestätigung Ihrer Anmeldung erhalten Sie in den nächsten Tagen per E-Mail.<br><br>
+              Herzliche Grüsse <br> 
+              Jonas Müller <br>
+              Leiter Niederlassung Bern</p>
+              <button id="closePopup">Alles klar!</button>
+            </div>
       </div> 
     </section>
+
+    <script>
+      function showPopup() {
+          document.getElementById('popup').style.display = 'block';
+      }
+      document.getElementById('closePopup').addEventListener('click', function() {
+          document.getElementById('popup').style.display = 'none';
+      });
+
+      <?php if (isset($success)) { ?>
+          showPopup();
+      <?php } ?>
+    </script>
 
     <?php require_once 'footer.php'; ?>
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>

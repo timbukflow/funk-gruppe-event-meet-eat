@@ -18,15 +18,15 @@ $( document ).ready(function() {
         $("body, html").animate({scrollTop: goto}, 1000);
     });
 
-    // additionalPerson
-    // document.getElementById('additionalPerson').addEventListener('change', function() {
-    //     var additionalPersonFields = document.getElementById('additionalPersonFields');
-    //     if (this.checked) {
-    //       additionalPersonFields.style.display = 'block';
-    //     } else {
-    //       additionalPersonFields.style.display = 'none';
-    //     }
-    //   });
+    additionalPerson
+    document.getElementById('additionalPerson').addEventListener('change', function() {
+        var additionalPersonFields = document.getElementById('additionalPersonFields');
+        if (this.checked) {
+          additionalPersonFields.style.display = 'block';
+        } else {
+          additionalPersonFields.style.display = 'none';
+        }
+      });
 
       
 });
