@@ -128,7 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
          
         $headers = "From: anmeldung@funk-gruppe-event.ch";
-        $to = "ivoschwizer@gmail.com";
+        $to = "bern@funk-gruppe.ch";
         $subject = "Funk Gruppe Event | meet&eat";
         $headers .= "\r\nContent-Type: text/plain; charset=utf-8\r\n";
             
