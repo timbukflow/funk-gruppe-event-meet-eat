@@ -53,7 +53,7 @@
             <div class="grid02 center">
               <img src="./img/bernhard-heusler.png" alt="funk-bernhard-heusler">
               <p class="noline">
-                <strong>Bernhard Heusler,</strong> <br> geboren 1963, ehemaliger Präsident des FC Basel, Co-Präsident der Schweizer Sporthilfe sowie Leadership-Referent und Buchautor. Seine Erlebnisse in Exekutiv- und Entscheidungsgremien sowie die Erkenntnisse, die er aus seinen Erfahrungen als Führungsperson und Berater gewonnen hat, gibt er an Vorträgen für Interessierte und an Seminaren für Führungskräfte weiter. In Ergänzung seiner Aktivitäten als Referent und Coach hat Bernhard Heusler unter dem Titel «EIN TEAM GEWINNT IMMER» sein persönliches Leadership-Abc verfasst.
+                <strong>Bernhard Heusler,</strong> <br> geboren 1963, ehemaliger Präsident des FC Basel, Co-Präsident der Schweizer Sporthilfe sowie Leadership-Referent und Buchautor. Seine Erlebnisse in Exekutiv- und Entscheidungsgremien sowie die Erkenntnisse, die er aus seinen Erfahrungen als Führungsperson und Berater gewonnen hat, gibt er an Vorträgen für Interessierte und an Seminaren für Führungskräfte weiter.
               </p>
             </div>
           </div>
