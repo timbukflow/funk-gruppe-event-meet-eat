@@ -188,7 +188,7 @@
 
             <div id="popup" class="popup">
               <h1>Vielen Dank für Ihr Interesse!</h1> 
-              <p>Ihre An- oder Abmeldung haben wir erhalten. Eine persönliche Bestätigung Ihrer Anmeldung erhalten Sie in den nächsten Tagen per E-Mail.<br><br>
+              <p>Ihre An- oder Abmeldung haben wir erhalten. Gerne werden wir Ihnen kurz vor dem Anlass nochmals die wichtigsten Infos per Mail zustellen.<br><br>
               Herzliche Grüsse <br> 
               Jonas Müller <br>
               Leiter Niederlassung Bern</p>
