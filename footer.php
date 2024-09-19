@@ -1,18 +1,17 @@
 <footer>
-    <div class="footer02">
-        <div>
-            <p>
-                Funk Bern <br>
-                Feldstrasse 42 <br>
-                CH-3073 Gümligen <br>
-            </p>
-        </div>
-        <div> 
+    <div class="footer01">
+        <p>
+            Funk Bern <br>
+            Feldstrasse 42 <br>
+            CH-3073 Gümligen <br> <br>
             <a href="tel:041583110200">T +41 58 311 02 00</a>
             <a href="https://www.funk-gruppe.ch/de/" target="_top">www.funk-gruppe.ch</a>
-        </div>
+        </p>
     </div>
-    <div class="footer01">
+    <div class="footer02">
         <h1>Die beste Empfehlung. Funk.</h1>
+        <div class="footer-logo">
+            <img src="img/funk-logo-w.svg" alt="funk logo">
+        </div> 
     </div> 
 </footer>
