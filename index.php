@@ -27,8 +27,7 @@
             Wir bedanken uns herzlich für Ihre Anmeldung und freuen uns, Sie am <strong>Donnerstag, 17. Oktober 2024 im Berner Kursaal</strong> begrüssen zu dürfen.
           </span>
           <span>
-            Freuen Sie sich auf die Keynote von Bernhard Heusler.
-            Bekannt als ehemaliger Präsident des FC Basel, Leadership-Referent und Buchautor.
+            Freuen Sie sich auf die Keynote von Bernhard Heusler, bekannt als ehemaliger Präsident des FC Basel, Leadership-Referent und Buchautor.
           </span>
           <span>
             Ungeachtet ob in Verwaltungsräten, Spitzensport-, Verkaufs- oder Produktions-Teams, sind es schlussendlich immer die Menschen bzw. ihre Aufgaben, Rollen und ihr Zusammenspiel, welche für das Erreichen der gemeinsamen Ziele entscheidend sind.
@@ -40,7 +39,7 @@
             Lassen Sie sich inspirieren und geniessen Sie mit uns zusammen einen spannenden Abend mit persönlichen Gesprächen, Networking und kulinarischen Leckerbissen.
           </span>
           <span>
-            Herzliche Grüsse <br>
+            Herzliche Grüsse <br><br>
             <strong>Jonas Müller</strong> <br>
             Leiter Niederlassung Bern
           </span>
@@ -76,7 +75,7 @@
               <p>17:00 Uhr</p>
               <p>Eintreffen der Gäste</p>
               <p>17:45 Uhr</p>
-              <p>Begrüssung (Jonas Müller)</p>
+              <p>Begrüssung</p>
               <p>18:00 Uhr</p>
               <p>Keynote "Teamwork/Leadership" (Bernhard Heusler)</p>
               <p class="noline">19:00 Uhr</p>
